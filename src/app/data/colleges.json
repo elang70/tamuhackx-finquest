@@ -4,8 +4,8 @@
         "name": "Community College",
         "tuition_cost": 2000,
         "bank_balance_change": 5000,
-        "assets": 5000,
-        "liabilities": -2000,
+        "assets_change": 0,
+        "liabilities_change": 2000,
         "educational_benefits": "Strong foundational courses, exploration of interests, potential for transfer.",
         "career_impact": "Cost-effective start, flexibility in choosing major, potential seamless transition."
       },
@@ -13,8 +13,8 @@
         "name": "State School",
         "tuition_cost": 8000,
         "bank_balance_change": 0,
-        "assets": 3000,
-        "liabilities": -8000,
+        "assets_change": 0,
+        "liabilities_change": 8000,
         "educational_benefits": "Diverse academic programs, access to resources, networking opportunities.",
         "career_impact": "Balanced education, potential for internships, connections with industry professionals."
       },
@@ -22,8 +22,8 @@
         "name": "Private University",
         "tuition_cost": 20000,
         "bank_balance_change": -10000,
-        "assets": 1000,
-        "liabilities": -20000,
+        "assets_change": 0,
+        "liabilities_change": 20000,
         "educational_benefits": "Specialized programs, renowned faculty, extensive alumni networks.",
         "career_impact": "Prestigious degree, access to exclusive opportunities, potentially higher starting salaries."
       }
