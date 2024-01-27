@@ -1,9 +1,17 @@
 "use client";
-import React from 'react';
+import React, { useState } from 'react';
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
+import HSJobPrompt from '../components/HSJobPrompt.js';
 
 const Page = () => {
+    const [selectedJob, setSelectedJob] = useState(null);
+
+    const handleJobSelection = (job) => {
+        console.log("Job selected: ", job);
+        setSelectedJob(job);
+    };
+
     return (
         <>
             <div> 
@@ -66,13 +74,7 @@ const Page = () => {
                     close => (
                         <div className='modal'>
                             <div className='content'>
-                                {"Content of the popup (to be replaced with a popup component)"}
-                            </div>
-                            <div>
-                                <button onClick=
-                                    {() => close()}>
-                                        Close modal
-                                </button>
+                                <HSJobPrompt closeModal={close} onJobSelect={handleJobSelection} />
                             </div>
                         </div>
                     )
