@@ -1,0 +1,56 @@
+{
+    "financial_options": [
+      {
+        "name": "Federal Subsidized Student Loan",
+        "type": "subsidized",
+        "annual_amount": 5000,
+        "duration": 4,
+        "interest_rate": 0.03,
+        "balance_change": 5000,
+        "assets_change": 0,
+        "liabilities_change": 5000,
+        "description": "Government pays interest during school and deferment periods, providing low-cost financing for educational expenses."
+      },
+      {
+        "name": "Federal Unsubsidized Student Loan",
+        "type": "unsubsidized",
+        "annual_amount": 7000,
+        "duration": 4,
+        "interest_rate": 0.05,
+        "balance_change": 7000,
+        "assets_change": 0,
+        "liabilities_change": 7000,
+        "description": "Interest accrues from the disbursement date, offering flexibility for students who don't qualify for subsidized loans."
+      },
+      {
+        "name": "Work-Study Programs",
+        "annual_earnings": 3000,
+        "duration": 4,
+        "balance_change": 0,
+        "assets_change": 3000,
+        "liabilities_change": 0,
+        "description": "Part-time job opportunities to cover educational expenses, gaining valuable work experience in parallel."
+      },
+      {
+        "name": "Scholarships and Grants",
+        "annual_amount": 2000,
+        "duration": 4,
+        "balance_change": 0,
+        "assets_change": 2000,
+        "liabilities_change": 0,
+        "description": "Financial aid that doesn't require repayment, reducing the overall cost of education."
+      },
+      {
+        "name": "Part-Time Employment",
+        "annual_earnings": 6000,
+        "duration": 4,
+        "balance_change": 0,
+        "assets_change": 6000,
+        "liabilities_change": 0,
+        "description": "Income from part-time work to cover living expenses, promoting financial independence."
+      }
+    ],
+    "lesson": "When considering student loans, it's crucial to weigh the advantages and disadvantages of different options:\n\n**Federal Student Loans:**\n*Advantages:*\n- Low fixed interest rates and flexible repayment plans.\n- Access to income-driven repayment options.\n- Possibility of loan forgiveness for public service work.\n- No need for a cosigner or credit check for most federal loans.\n*Disadvantages:*\n- Limits on the amount you can borrow each year.\n- May not cover the full cost of tuition and living expenses.\n- Interest may accrue while in school.\n\n**Private Student Loans:**\n*Advantages:*\n- Can fill the gap between federal aid and the total cost of education.\n- Some offer competitive interest rates based on creditworthiness.\n- Flexible repayment plans and deferment options may be available.\n*Disadvantages:*\n- Higher interest rates compared to federal loans.\n- May require a credit check or a cosigner.\n- Less generous forbearance and deferment options.\n\n**Work-Study Programs:**\n*Advantages:*\n- Provides part-time employment to help cover educational expenses.\n- Offers valuable work experience related to your field of study.\n- Eligibility based on financial need.\n*Disadvantages:*\n- Limited earning potential may not cover all expenses.\n- Availability of positions may vary.\n- Work commitments can impact study time.\n\n**Scholarships and Grants:**\n*Advantages:*\n- Do not require repayment, reducing overall financial burden.\n- Merit-based or need-based, depending on eligibility criteria.\n- Widely available from various sources.\n*Disadvantages:*\n- Highly competitive, with limited availability.\n- Specific eligibility criteria may be restrictive.\n- Renewal requirements may apply.\n\n**Part-Time Employment:**\n*Advantages:*\n- Provides a source of income to cover living expenses.\n- Allows students to gain work experience while studying.\n- Flexible schedules to accommodate classes.\n*Disadvantages:*\n- Balancing work and academics can be challenging.\n- Limited earning potential may not cover all expenses.\n- May lead to fatigue and impact academic performance."
+      
+  }
+  
