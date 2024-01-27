@@ -6,21 +6,21 @@
         "retirement_plan": "401(k) with Employer Match",
         "description": "You contribute 5% of your pre-tax income to your employer's 401(k) plan, and your employer matches it. Your money is invested in a diversified portfolio, potentially earning higher returns.",
         "bank_balance_change": -2000,
-        "assets_change": 2200,   // Greater than bank_balance_change
+        "assets_change": 2200,   
         "liabilities_change": 0
       },
       {
         "retirement_plan": "Roth IRA",
         "description": "You open a Roth Individual Retirement Account (IRA). This plan allows you to contribute after-tax income, and your investments grow tax-free. You have full control over your investment choices.",
         "bank_balance_change": -2000,
-        "assets_change": 2100,   // Greater than bank_balance_change
+        "assets_change": 215    0,   
         "liabilities_change": 0
       },
       {
         "retirement_plan": "Traditional IRA with No Investments",
         "description": "You open a Traditional IRA but do not invest your contributions. Your money sits in a low-interest savings account. This plan doesn't maximize your potential returns.",
         "bank_balance_change": -2000,
-        "assets_change": 2050,   // Greater than bank_balance_change
+        "assets_change": 2050,   
         "liabilities_change": 0
       },
       {
