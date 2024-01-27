@@ -1,0 +1,41 @@
+{
+    "age_range": "35-37",
+    "prompt": "You've faced a medical emergency, and you've already used up all the health insurance coverage available. Now you need to decide how to handle the substantial remaining medical expenses. Your choices are:",
+    "choices": [
+      {
+        "decision": "Best Option - Utilize Emergency Fund",
+        "description": "You use your well-funded emergency fund to cover the substantial remaining medical expenses. This preserves your financial stability without taking on any debt.",
+        "bank_balance_change": -8000,    // Medical expenses covered by emergency fund
+        "assets_change": -8000,         // Reduction in emergency fund
+        "liabilities_change": 0
+      },
+      {
+        "decision": "Good Option - Negotiate Payment Plan",
+        "description": "You negotiate a reasonable payment plan with the medical provider to gradually pay off the substantial remaining bills. This avoids immediate financial strain.",
+        "bank_balance_change": -5000,    // Initial payment
+        "assets_change": -5000,         // Reduction in bank balance
+        "liabilities_change": 5000      // Medical debt incurred
+      },
+      {
+        "decision": "Fair Option - Seek Financial Assistance",
+        "description": "You explore options for financial assistance or charity care from the hospital or relevant organizations to alleviate the burden of the substantial remaining medical expenses.",
+        "bank_balance_change": -3000,    // Initial payment (if required)
+        "assets_change": -3000,         // Reduction in bank balance (if required)
+        "liabilities_change": 3000      // Medical debt incurred (if not fully covered)
+      },
+      {
+        "decision": "Bad Option - Take Out a Personal Loan",
+        "description": "You decide to take out a personal loan to cover the substantial remaining medical bills. While it provides immediate relief, it comes with significant interest and future debt obligations.",
+        "bank_balance_change": 10000,     // Loan received
+        "assets_change": 0,             // No change in assets
+        "liabilities_change": 10000      // Personal loan taken
+      }
+    ],
+    "lesson": {
+      "Best Option - Utilize Emergency Fund": "Maintaining a well-funded emergency fund is crucial for financial security during unexpected crises. This option emphasizes the benefits of saving for substantial emergencies.",
+      "Good Option - Negotiate Payment Plan": "Negotiating a reasonable payment plan with the medical provider can help manage substantial medical expenses while minimizing immediate financial strain.",
+      "Fair Option - Seek Financial Assistance": "Exploring options for financial assistance or charity care can provide substantial relief from medical expenses, demonstrating the value of seeking help when faced with a significant financial burden.",
+      "Bad Option - Take Out a Personal Loan": "Taking out a personal loan may provide immediate relief for substantial expenses, but it comes with substantial interest and debt obligations. This option underscores the importance of understanding the long-term financial impact of borrowing."
+    }
+  }
+  

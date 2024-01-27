@@ -17,18 +17,18 @@
         "annual_amount": 7000,
         "duration": 4,
         "interest_rate": 0.05,
-        "balance_change": 7000,
+        "balance_change": 0,
         "assets_change": 0,
         "liabilities_change": 7000,
         "description": "Interest accrues from the disbursement date, offering flexibility for students who don't qualify for subsidized loans."
       },
       {
         "name": "Work-Study Programs",
-        "annual_earnings": 3000,
+        "annual_earnings": 6000,
         "duration": 4,
-        "balance_change": 0,
-        "assets_change": 3000,
-        "liabilities_change": 0,
+        "balance_change": 2000,
+        "assets_change": 0,
+        "liabilities_change": -4000,
         "description": "Part-time job opportunities to cover educational expenses, gaining valuable work experience in parallel."
       },
       {
@@ -36,7 +36,7 @@
         "annual_amount": 2000,
         "duration": 4,
         "balance_change": 0,
-        "assets_change": 2000,
+        "assets_change": 0,
         "liabilities_change": 0,
         "description": "Financial aid that doesn't require repayment, reducing the overall cost of education."
       },
@@ -45,7 +45,7 @@
         "annual_earnings": 6000,
         "duration": 4,
         "balance_change": 0,
-        "assets_change": 6000,
+        "assets_change": 0,
         "liabilities_change": 0,
         "description": "Income from part-time work to cover living expenses, promoting financial independence."
       }
