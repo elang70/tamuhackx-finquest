@@ -31,6 +31,9 @@
       },
       {
         "job": "Do Not Take a Job",
+        "hourly_rate": 0,
+        "hours_per_week": 0,
+        "duration_in_weeks": 0,
         "bank_balance_change": 0,
         "assets_change": 0,
         "liabilities_change": 0

@@ -1,0 +1,41 @@
+{
+    "age_range": "25-27",
+    "prompt": "You're 25 years old and considering how to start saving for retirement. There are various retirement plans to choose from:",
+    "choices": [
+      {
+        "retirement_plan": "401(k) with Employer Match",
+        "description": "You contribute 5% of your pre-tax income to your employer's 401(k) plan, and your employer matches it. Your money is invested in a diversified portfolio, potentially earning higher returns.",
+        "bank_balance_change": -2000,
+        "assets_change": 2200,   
+        "liabilities_change": 0
+      },
+      {
+        "retirement_plan": "Roth IRA",
+        "description": "You open a Roth Individual Retirement Account (IRA). This plan allows you to contribute after-tax income, and your investments grow tax-free. You have full control over your investment choices.",
+        "bank_balance_change": -2000,
+        "assets_change": 215    0,   
+        "liabilities_change": 0
+      },
+      {
+        "retirement_plan": "Traditional IRA with No Investments",
+        "description": "You open a Traditional IRA but do not invest your contributions. Your money sits in a low-interest savings account. This plan doesn't maximize your potential returns.",
+        "bank_balance_change": -2000,
+        "assets_change": 2050,   
+        "liabilities_change": 0
+      },
+      {
+        "retirement_plan": "No Retirement Plan",
+        "description": "You decide not to save for retirement at all, believing it's too early to think about it. This plan carries the risk of not having enough funds for a comfortable retirement.",
+        "bank_balance_change": 0,
+        "assets_change": 0,
+        "liabilities_change": 0
+      }
+    ],
+    "lesson": {
+      "Best Option (401(k) with Employer Match)": "This is the best option because it takes advantage of employer matching contributions, essentially doubling your savings. It demonstrates the importance of utilizing employer benefits and the potential for significant growth in a tax-advantaged account.",
+      "Good Option (Roth IRA)": "A Roth IRA is a good choice because it offers tax-free growth, and you have control over your investments. It shows the benefits of early savings in a tax-efficient account.",
+      "Bad Option (Traditional IRA with No Investments)": "This option is less favorable because it doesn't maximize the potential for investment growth. It emphasizes the importance of choosing suitable investment options within retirement accounts.",
+      "Worst Option (No Retirement Plan)": "This is the worst option as it neglects retirement planning entirely. It highlights the risk of not preparing for your financial future and the missed opportunity for compounding growth over time."
+    }
+  }
+  

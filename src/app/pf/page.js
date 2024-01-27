@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 import InitialPrompt from '../components/initial_prompt';
+import HSJobPrompt from '../components/HSJobPrompt.js';
 
 const Page = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -14,6 +15,13 @@ const Page = () => {
     const closeModal = () => {
         setIsOpen(false);
     }
+
+    const [selectedJob, setSelectedJob] = useState(null);
+
+    const handleJobSelection = (job) => {
+        console.log("Job selected: ", job);
+        setSelectedJob(job);
+    };
 
     return (
         <>
@@ -85,13 +93,7 @@ const Page = () => {
                     close => (
                         <div className='modal'>
                             <div className='content'>
-                                {"Content of the popup (to be replaced with a popup component)"}
-                            </div>
-                            <div>
-                                <button onClick=
-                                    {() => close()}>
-                                        Close modal
-                                </button>
+                                <HSJobPrompt closeModal={close} onJobSelect={handleJobSelection} />
                             </div>
                         </div>
                     )
