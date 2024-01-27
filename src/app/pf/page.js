@@ -1,4 +1,7 @@
+"use client";
 import React from 'react';
+import Popup from 'reactjs-popup';
+import 'reactjs-popup/dist/index.css';
 
 const Page = () => {
     return (
@@ -18,10 +21,65 @@ const Page = () => {
             </div>
             
             <div>
-                <button>Assets</button>
-                <button>Banking</button>
-                <button>Occupation</button>
+            <Popup trigger=
+                {<button> Assets </button>} 
+                modal nested>
+                {
+                    close => (
+                        <div className='modal'>
+                            <div className='content'>
+                                {"Content of the popup (to be replaced with a popup component)"}
+                            </div>
+                            <div>
+                                <button onClick=
+                                    {() => close()}>
+                                        Close modal
+                                </button>
+                            </div>
+                        </div>
+                    )
+                }
+            </Popup>
+            <Popup trigger=
+                {<button> Banking </button>} 
+                modal nested>
+                {
+                    close => (
+                        <div className='modal'>
+                            <div className='content'>
+                                {"Content of the popup (to be replaced with a popup component)"}
+                            </div>
+                            <div>
+                                <button onClick=
+                                    {() => close()}>
+                                        Close modal
+                                </button>
+                            </div>
+                        </div>
+                    )
+                }
+            </Popup>
+            <Popup trigger=
+                {<button> Occupation </button>} 
+                modal nested>
+                {
+                    close => (
+                        <div className='modal'>
+                            <div className='content'>
+                                {"Content of the popup (to be replaced with a popup component)"}
+                            </div>
+                            <div>
+                                <button onClick=
+                                    {() => close()}>
+                                        Close modal
+                                </button>
+                            </div>
+                        </div>
+                    )
+                }
+            </Popup>
             </div>
+            
             
         </>
     );
