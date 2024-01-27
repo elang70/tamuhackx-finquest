@@ -1,0 +1,41 @@
+{
+    "age_range": "15-17",
+    "prompt": "You're a 15-year-old high school student eager to start earning your own money. You have several job options to consider:",
+    "choices": [
+      {
+        "job": "Work at McDonald's",
+        "hourly_rate": 8,
+        "hours_per_week": 15,
+        "duration_in_weeks": 52,
+        "bank_balance_change": 6240,
+        "assets_change": 0,
+        "liabilities_change": 0
+      },
+      {
+        "job": "Tutoring Job",
+        "hourly_rate": 15,
+        "hours_per_week": 10,
+        "duration_in_weeks": 52,
+        "bank_balance_change": 7800,
+        "assets_change": 0,
+        "liabilities_change": 0
+      },
+      {
+        "job": "Lawn Mowing in Summer",
+        "hourly_rate": 20,
+        "hours_per_week": 15,
+        "weeks_in_summer": 15,
+        "bank_balance_change": 4500,
+        "assets_change": 0,
+        "liabilities_change": 0
+      },
+      {
+        "job": "Do Not Take a Job",
+        "bank_balance_change": 0,
+        "assets_change": 0,
+        "liabilities_change": 0
+      }
+    ],
+    "lesson": "Choosing the right job at this stage of life is crucial for your financial growth. The best job option is the tutoring job, as it offers the highest hourly rate, flexible hours, and the potential to save and invest your earnings. Identify your strengths, market yourself, budget, save, and consider wise investments to build your financial future."
+  }
+  
