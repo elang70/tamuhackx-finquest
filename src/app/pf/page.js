@@ -134,18 +134,6 @@ const mystyle = {
         <h4>Name: Bob</h4>
         <h4>Age: {ages[promptCounter]}</h4>
         <h4>Status: {status[promptCounter]}</h4>
-
-        {choices.map((dataObject) => (
-          <button>
-            <li key={dataObject.id}>
-              {Object.entries(dataObject).map(([key, value]) => (
-                <span key={key}>
-                  <strong>{key}:</strong> {value},{" "}
-                </span>
-              ))}
-            </li>
-          </button>
-        ))}
       </div>
 
       <div>
@@ -178,7 +166,7 @@ const mystyle = {
         {done ? <Summary></Summary> : <div></div>}
       </div>
       <div className={styles.advancedbtn}>
-        <Popup trigger={<button className="bigButton"> Advance to next stage </button>} modal nested>
+        <Popup trigger={<button className="bigButton" style={{marginBottom:10}}> Advance to next stage </button>} modal nested>
             {(close) => (
               <div className="modal">
                 <div className="content">
@@ -193,6 +181,17 @@ const mystyle = {
             )}
         </Popup>
       </div>
+      {choices.map((dataObject) => (
+          <div>
+            <li key={dataObject.id} className={styles.choices}>
+              {Object.entries(dataObject).map(([key, value]) => (
+                <span key={key}>
+                  <strong>{key}:</strong> {value},{" "}
+                </span>
+              ))}
+            </li>
+          </div>
+        ))}
     </div>
   );
 };

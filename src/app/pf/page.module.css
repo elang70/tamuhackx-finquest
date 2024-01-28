@@ -41,3 +41,20 @@
   display: flex;
   justify-content: center;
 }
+
+.choices {
+  font-family: Montserrat, sans-serif;;
+  line-height: 30px;
+  font-weight: bold;
+  color: #009688;
+  padding: 20px;
+  box-shadow:
+  inset #009688 0 0 0 5px, 
+  inset #059c8e 0 0 0 1px, 
+  inset #0cab9c 0 0 0 10px, 
+  inset #1fbdae 0 0 0 11px, 
+  inset #8ce9ff 0 0 0 16px;
+  text-align: left;
+  border-radius: 25px;
+  margin-bottom: 10px;
+}

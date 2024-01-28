@@ -37,7 +37,7 @@ function HSJobPrompt({ closeModal, onSelect, prompts, promptDesc }) {
         {prompts.map((dataObject) => (
           <button
             className="bigButton"
-            style={{height: 'auto', width: 'auto', padding: '15px'}}
+            style={{height: 'auto', width: 'auto', padding: '15px', whiteSpace: 'normal'}}
             onClick={() => handleJobSelection(dataObject)}
           >
             <li key={dataObject.id}>
