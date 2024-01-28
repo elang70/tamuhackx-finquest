@@ -125,7 +125,7 @@ const mystyle = {
 
       <div className="container1">
         <Lottie animationData={animationData4} className={styles.dollar}></Lottie>
-        <p>Money: ${bankAccountBalance}</p>
+        <p className="money">Money: ${bankAccountBalance}</p>
       </div>
       <div>
         <h1>FinQuest</h1>

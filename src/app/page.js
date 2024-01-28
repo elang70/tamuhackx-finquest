@@ -60,54 +60,56 @@ export default function Home() {
         <div>
           <a href="/pf" className={styles.aref}>Personal Finance</a> 
           <p>
-            Take a journey through the stages of life and learn about the basics of personal finance.
+            New to finance? Start here! Take a journey through the stages of life and learn about the basics of 
+            personal finance including the basics of budgeting, saving, investing, and more!
             <br></br> <br></br>
             Focuses: 
             <br></br> 
-            - Income
+            - Budgeting
             <br></br> 
             - Assets vs liabilities
             <br></br> 
-            - Budgeting
+            - Best practices
           </p>
           <br></br>
-          <a href="" className={styles.aref}>Option 2</a>
+          <a href="" className={styles.aref}>Investing</a>
           <p>
-            Take a journey through the stages of life and learn about the basics of personal finance.
+            Learn how to invest your money and grow your wealth! 
             <br></br> <br></br>
             Focuses: 
             <br></br> 
-            - Income
+            - Stocks/bonds
             <br></br> 
-            - Assets vs liabilities
+            - Interest
             <br></br> 
-            - Budgeting
+            - Brockers
           </p>
           <br></br>
-          <a href="" className={styles.aref}>Option 3</a>
+          <a href="" className={styles.aref}>Building Credit</a>
           <p>
-            Take a journey through the stages of life and learn about the basics of personal finance.
+            Learn about the importance of credit and how to build your credit score.
             <br></br> <br></br>
             Focuses: 
             <br></br> 
-            - Income
+            - Credit cards
             <br></br> 
-            - Assets vs liabilities
+            - Loands and interest
             <br></br> 
-            - Budgeting
+            - Mortgages
           </p>
           <br></br>
-          <a href="" className={styles.aref}>Option 4</a>
+          <a href="" className={styles.aref}>Spending</a>
           <p>
-            Take a journey through the stages of life and learn about the basics of personal finance.
+            Learn how to spend your money wisely and avoid debt. Practice how to track your spending 
+            and navigate through common spending scenarios.
             <br></br> <br></br>
             Focuses: 
             <br></br> 
             - Income
             <br></br> 
-            - Assets vs liabilities
+            - Tracking spending
             <br></br> 
-            - Budgeting
+            - Financial literacy
           </p>
           <br></br>
         </div>
