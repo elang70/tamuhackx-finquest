@@ -9,7 +9,7 @@ export default function Summary() {
 
   const firstCollege = collegeD.colleges[0];
 
-  const loanDetails = collegeL.financial_options[0];
+  const loanDetails = collegeL["Financial Options"][0];
 
   const earlyCareerJob = frJob
 
