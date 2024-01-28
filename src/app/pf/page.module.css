@@ -26,6 +26,11 @@
   height: 200px;
 }
 
+.money {
+  width: 200px;
+  height: 200px;
+}
+
 .container1 {
   display: flex;
 
