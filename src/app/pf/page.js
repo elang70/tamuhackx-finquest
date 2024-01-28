@@ -149,7 +149,7 @@ const mystyle = {
       </div>
 
       <div>
-        <Popup trigger={<button className="bigButton"> Side Quests </button>} modal nested>
+        <Popup trigger={<button className="bigButton" style={{marginRight:10, marginBottom:10}}> Side Quests </button>} modal nested>
           {(close) => (
             <div className="modal">
               <div className="content">{""}</div>
