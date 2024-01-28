@@ -21,6 +21,12 @@
     text-decoration: none;
   }
 
-.advancedbtn {
-  background-color: #1b8381;
+.dollar {
+  width: 200px;
+  height: 200px;
+}
+
+.container1 {
+  display: flex;
+
 }
