@@ -97,6 +97,13 @@ const handleSideQuest = (effect, value, quest) => {
     setChoices([...choices, {side_quest:quest, effect:value[1]}]);
 };
 
+const mystyle = {
+  color: "blue",
+  backgroundColor: "DodgerBlue",
+  padding: "10px",
+  fontFamily: "Arial"
+};
+
   return (
     <>
       <Popup open={isOpen} closeOnDocumentClick onClose={closeModal}>
@@ -107,19 +114,6 @@ const handleSideQuest = (effect, value, quest) => {
       </Popup>
 
       <div>
-        <Popup trigger={<button id="advancebtn"> Advance to next stage </button>} modal nested>
-          {(close) => (
-            <div className="modal">
-              <div className="content">
-                <HSJobPrompt
-                  closeModal={close}
-                  onSelect={handleSelection}
-                  prompts={listPrompts[promptCounter]}
-                />
-              </div>
-            </div>
-          )}
-        </Popup>
         <p>Money: ${bankAccountBalance}</p>
       </div>
       <div>
@@ -156,7 +150,7 @@ const handleSideQuest = (effect, value, quest) => {
             </div>
           )}
         </Popup>
-        <Popup trigger={<button> Banking </button>} modal nested>
+        <Popup trigger={<button class="btn"> Banking </button>} modal nested>
           {(close) => (
             <div className="modal">
               <div className="content">
@@ -170,6 +164,21 @@ const handleSideQuest = (effect, value, quest) => {
         </Popup>
 
         {done ? <Summary></Summary> : <div></div>}
+      </div>
+      <div className="advancedbtn">
+        <Popup trigger={<button class="advancebtn"> Advance to next stage </button>} modal nested>
+            {(close) => (
+              <div className="modal">
+                <div className="content">
+                  <HSJobPrompt
+                    closeModal={close}
+                    onSelect={handleSelection}
+                    prompts={listPrompts[promptCounter]}
+                  />
+                </div>
+              </div>
+            )}
+        </Popup>
       </div>
     </>
   );
