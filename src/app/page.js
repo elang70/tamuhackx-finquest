@@ -1,12 +1,9 @@
 "use client";
 import Image from "next/image";
 import styles from "./page.module.css";
-<<<<<<< HEAD
 import Lottie from "lottie-react";
 import animationData from "./assets/animation.json";
-=======
 import Summary from "./summary_content/summary_page";
->>>>>>> 5eb86f09b121c0c4d6c25940bfe88f49958dcbb0
 
 export default function Home() {
   return (
