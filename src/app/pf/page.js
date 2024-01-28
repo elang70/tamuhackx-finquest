@@ -127,7 +127,7 @@ const mystyle = {
         <Lottie animationData={animationData4} className={styles.dollar}></Lottie>
       </div>
       <div>
-        <div className={styles.container2}>
+        <div className={styles.container2} style={{margin:'auto'}}>
           <h1 className={styles.spacing}>FinQuest</h1>
           <h2 className={styles.spacing}>Stage {promptCounter+1}</h2>
           <h3 className={styles.spacing}>Journey: Personal Finance</h3>
@@ -150,7 +150,7 @@ const mystyle = {
       </div>
 
       <div>
-        <Popup trigger={<button className="bigButton" style={{marginRight:10, marginBottom:10}}> Side Quests </button>} modal nested>
+        <Popup trigger={<button className="bigButton" style={{marginRight:10, marginBottom:10, marginTop:10}}> Side Quests </button>} modal nested>
           {(close) => (
             <div className="modal">
               <div className="content">{""}</div>
