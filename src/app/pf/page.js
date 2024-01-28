@@ -135,20 +135,8 @@ const mystyle = {
           <h4 className={styles.spacing}>Age: {ages[promptCounter]}</h4>
           <h4 className={styles.spacing}>Status: {status[promptCounter]}</h4>
         </div>
-
-        {choices.map((dataObject) => (
-          <button>
-            <li key={dataObject.id}>
-              {Object.entries(dataObject).map(([key, value]) => (
-                <span key={key}>
-                  <strong>{key}:</strong> {value},{" "}
-                </span>
-              ))}
-            </li>
-          </button>
-        ))}
       </div>
-
+      
       <div>
         <Popup trigger={<button className="bigButton" style={{marginRight:10, marginBottom:10, marginTop:10}}> Side Quests </button>} modal nested>
           {(close) => (
