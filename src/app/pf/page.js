@@ -7,6 +7,11 @@ import HSJobPrompt from "../components/HSJobPrompt.js";
 import hs_job from "../data/hs_main.json";
 import collegeChoices from "../data/colleges.json";
 import Summary from "../summary_content/summary_page.js"
+import collegeLoan from "../data/colleges_loan.json";
+import disaster from "../data/disaster.json";
+import house from "../data/house.json";
+import jobOptions from "../data/job_options.json";
+import retirement from "../data/retirement.json";
 
 const Page = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +21,7 @@ const Page = () => {
 
   const hs_main = hs_job.choices;
 
-  const listPrompts = [hs_main, collegeChoices.colleges];
+  const listPrompts = [hs_main, collegeChoices.colleges, collegeLoan.financial_options, jobOptions.job_offers, retirement.choices, disaster.choices, house.choices];
 
   function increasePromptCounter() {
     console.log("Prompt Counter: ", promptCounter);
