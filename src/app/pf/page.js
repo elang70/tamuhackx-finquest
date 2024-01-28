@@ -150,14 +150,15 @@ const mystyle = {
       </div>
 
       <div>
-        <Popup trigger={<button className="bigButton"> Side Quests </button>} modal nested>
+        <Popup trigger={<button className="bigButton" style={{marginRight:10, marginBottom:10}}> Side Quests </button>} modal nested>
           {(close) => (
             <div className="modal">
               <div className="content">{""}</div>
               <div>
-                <button onClick={() => close()}>
                   <SideQuestsNav handleSideQuest={handleSideQuest} salary={salary} liabilities={liabilities} balance={bankAccountBalance} />
-                </button>
+              </div>
+              <div className={styles.center}>
+                <button className="bigButton" onClick={() => close()}>Close</button>
               </div>
             </div>
           )}
@@ -178,7 +179,7 @@ const mystyle = {
         {done ? <Summary></Summary> : <div></div>}
       </div>
       <div className={styles.advancedbtn}>
-        <Popup trigger={<button className="bigButton"> Advance to next stage </button>} modal nested>
+        <Popup trigger={<button className="bigButton" style={{marginBottom:10}}> Advance to next stage </button>} modal nested>
             {(close) => (
               <div className="modal">
                 <div className="content">
@@ -193,6 +194,17 @@ const mystyle = {
             )}
         </Popup>
       </div>
+      {choices.map((dataObject) => (
+          <div>
+            <li key={dataObject.id} className={styles.choices}>
+              {Object.entries(dataObject).map(([key, value]) => (
+                <span key={key}>
+                  <strong>{key}:</strong> {value},{" "}
+                </span>
+              ))}
+            </li>
+          </div>
+        ))}
     </div>
   );
 };

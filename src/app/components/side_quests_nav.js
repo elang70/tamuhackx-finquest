@@ -3,6 +3,8 @@ import { increaseSalary } from '../data/calculations.js';
 import { babyBudgetDecision } from '../data/calculations.js';
 import { carPurchaseDecision } from '../data/calculations.js';
 import { vacationPlanning } from '../data/calculations.js';
+import styles from './side_quests_style.module.css';
+import "reactjs-popup/dist/index.css";
 
 function SideQuestsNav({ handleSideQuest, salary, liabilities, balance }) {
     const handleButtonClick = (quest) => {
@@ -42,43 +44,44 @@ function SideQuestsNav({ handleSideQuest, salary, liabilities, balance }) {
     //     </div>
     // );
     return (
-        <div>
-            <div style={styles.container}>
-                <button style={styles.button} onClick={() => handleButtonClick('Salary Negotiation')}>Salary Negotiation</button>
-                <button style={{ ...styles.button, ...styles.buttonLeft }} onClick={() => handleButtonClick('Have a Baby')}>Have a Baby</button>
+        <>
+            <div>
+                <h1 className={styles.center}>Side Quests</h1>
             </div>
-            <div style={{ ...styles.container, ...styles.containerTop }}>
-                <button style={styles.button} onClick={() => handleButtonClick('Buy a Car')}>Buy a Car</button>
-                <button style={{ ...styles.button, ...styles.buttonLeft }} onClick={() => handleButtonClick('Go on vacation')}>Go on vacation</button>
+            <div className={styles.center}>
+                <button className="bigButton" style={{marginRight:10, marginBottom:10}} onClick={() => handleButtonClick('Salary Negotiation')}>Salary Negotiation</button>
+                <button className="bigButton" style={{marginRight:10, marginBottom:10}} onClick={() => handleButtonClick('Have a Baby')}>Have a Baby</button>
+                <button className="bigButton" style={{marginRight:10, marginBottom:10}} onClick={() => handleButtonClick('Buy a Car')}>Buy a Car</button>
+                <button className="bigButton" style={{marginBottom:10}} onClick={() => handleButtonClick('Go on vacation')}>Go on vacation</button>
             </div>
-        </div>
+        </>
     );
 }
 
-const styles = {
-    button: {
-        marginRight: '10px',
-        backgroundColor: '#4CAF50',
-        border: 'none',
-        color: 'white',
-        padding: '15px 32px',
-        textAlign: 'center',
-        textDecoration: 'none',
-        display: 'inline-block',
-        fontSize: '16px',
-        margin: '4px 2px',
-        cursor: 'pointer'
-    },
-    buttonLeft: {
-        marginLeft: '10px'
-    },
-    container: {
-        display: 'flex',
-        justifyContent: 'center'
-    },
-    containerTop: {
-        marginTop: '10px'
-    }
-};
+// const styles = {
+//     button: {
+//         marginRight: '10px',
+//         backgroundColor: '#4CAF50',
+//         border: 'none',
+//         color: 'white',
+//         padding: '15px 32px',
+//         textAlign: 'center',
+//         textDecoration: 'none',
+//         display: 'inline-block',
+//         fontSize: '16px',
+//         margin: '4px 2px',
+//         cursor: 'pointer'
+//     },
+//     buttonLeft: {
+//         marginLeft: '10px'
+//     },
+//     container: {
+//         display: 'flex',
+//         justifyContent: 'center'
+//     },
+//     containerTop: {
+//         marginTop: '10px'
+//     }
+// };
 
 export default SideQuestsNav;
