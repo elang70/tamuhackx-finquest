@@ -40,7 +40,7 @@ const Page = () => {
   function increasePromptCounter() {
     if (promptCounter + 1 >= listPrompts.length) {
       setDone(true);
-      document.getElementById("advancebtn").disabled = true;
+      document.getElementsByClassName("advancebtn")[0].disabled = true;
     } else {
       setPromptCounter(promptCounter + 1);
     }
