@@ -6,6 +6,7 @@ import InitialPrompt from "../components/initial_prompt";
 import HSJobPrompt from "../components/HSJobPrompt.js";
 import hs_job from "../data/hs_main.json";
 import collegeChoices from "../data/colleges.json";
+import SideQuestsNav from "../components/side_quests_nav.js";
 
 const Page = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -94,7 +95,7 @@ const Page = () => {
               <div className="content">{""}</div>
               <div>
                 <button onClick={() => close()}>
-                  <InitialPrompt />
+                  <SideQuestsNav />
                 </button>
               </div>
             </div>
