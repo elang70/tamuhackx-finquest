@@ -57,7 +57,7 @@ export default function Home() {
       </div>
       <h2 className={styles.h22}>Journeys:</h2>
       <div className={styles.adiv}>
-        <p>
+        <div>
           <a href="/pf" className={styles.aref}>Personal Finance</a> 
           <p>
             Take a journey through the stages of life and learn about the basics of personal finance.
@@ -110,7 +110,7 @@ export default function Home() {
             - Budgeting
           </p>
           <br></br>
-        </p>
+        </div>
       </div>
     </>
   );
