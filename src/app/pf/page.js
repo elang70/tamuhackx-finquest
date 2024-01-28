@@ -40,7 +40,7 @@ const Page = () => {
   function increasePromptCounter() {
     if (promptCounter + 1 >= listPrompts.length) {
       setDone(true);
-      document.getElementsByClassName("advancebtn")[0].disabled = true;
+      document.getElementById("advancebtn").disabled = true;
     } else {
       setPromptCounter(promptCounter + 1);
     }
@@ -167,7 +167,7 @@ const mystyle = {
         {done ? <Summary></Summary> : <div></div>}
       </div>
       <div className={styles.advancedbtn}>
-        <Popup trigger={<button className="bigButton" style={{marginBottom:10}}> Advance to next stage </button>} modal nested>
+        <Popup trigger={<button className="bigButton" id="advancebtn" style={{marginBottom:10}}> Advance to next stage </button>} modal nested>
             {(close) => (
               <div className="modal">
                 <div className="content">
