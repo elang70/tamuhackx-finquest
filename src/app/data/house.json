@@ -25,10 +25,5 @@
       "Balance Change": -8000
     }
   ],
-  "lesson": {
-    "Best Choice": "Choosing an affordable starter home, securing a reasonable mortgage, and having roommates to share expenses can be a balanced approach to home ownership and financial stability. It's the best choice for managing costs effectively and building equity.",
-    "Good Choice": "Purchasing a more expensive dream home requires meticulous financial planning to manage the higher costs effectively. While it fulfills your desires, it comes with a larger debt burden.",
-    "Bad Choice - Renting a House": "Renting a house while investing your savings in other ventures can be a complex financial strategy, requiring careful management and risk assessment. It offers flexibility but doesn't allow you to build equity.",
-    "Worst Choice - Buying a Fixer-Upper": "Buying a fixer-upper and renovating it can be cost-effective but demands significant time and effort for managing the renovations. It's the worst choice as it may lead to unexpected expenses and financial strain."
-  }
+  "lesson": "Best Choice: Choosing an affordable starter home, securing a reasonable mortgage, and having roommates to share expenses can be a balanced approach to home ownership and financial stability. It's the best choice for managing costs effectively and building equity.\nGood Choice: Purchasing a more expensive dream home requires meticulous financial planning to manage the higher costs effectively. While it fulfills your desires, it comes with a larger debt burden.\nBad Choice - Renting a House: Renting a house while investing your savings in other ventures can be a complex financial strategy, requiring careful management and risk assessment. It offers flexibility but doesn't allow you to build equity.\nWorst Choice - Buying a Fixer-Upper: Buying a fixer-upper and renovating it can be cost-effective but demands significant time and effort for managing the renovations. It's the worst choice as it may lead to unexpected expenses and financial strain."
 }

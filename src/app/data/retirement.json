@@ -31,10 +31,5 @@
       "Liabilities Change": 0
     }
   ],
-  "lesson": {
-    "Best Option (401(k) with Employer Match)": "This is the best option because it takes advantage of employer matching contributions, essentially doubling your savings. It demonstrates the importance of utilizing employer benefits and the potential for significant growth in a tax-advantaged account.",
-    "Good Option (Roth IRA)": "A Roth IRA is a good choice because it offers tax-free growth, and you have control over your investments. It shows the benefits of early savings in a tax-efficient account.",
-    "Bad Option (Traditional IRA with No Investments)": "This option is less favorable because it doesn't maximize the potential for investment growth. It emphasizes the importance of choosing suitable investment options within retirement accounts.",
-    "Worst Option (No Retirement Plan)": "This is the worst option as it neglects retirement planning entirely. It highlights the risk of not preparing for your financial future and the missed opportunity for compounding growth over time."
-  }
+  "lesson": "Best Option: 401(k) with Employer Match - This is the best option because it takes advantage of employer matching contributions, essentially doubling your savings. It demonstrates the importance of utilizing employer benefits and the potential for significant growth in a tax-advantaged account.\nGood Option: Roth IRA - A Roth IRA is a good choice because it offers tax-free growth, and you have control over your investments. It shows the benefits of early savings in a tax-efficient account.\nBad Option: Traditional IRA with No Investments - This option is less favorable because it doesn't maximize the potential for investment growth. It emphasizes the importance of choosing suitable investment options within retirement accounts.\nWorst Option: No Retirement Plan - This is the worst option as it neglects retirement planning entirely. It highlights the risk of not preparing for your financial future and the missed opportunity for compounding growth over time."
 }
