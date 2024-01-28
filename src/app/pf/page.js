@@ -29,10 +29,9 @@ const Page = () => {
   const [liabilities, setLiabilities] = useState(0);
 
   const hs_main = hs_job.choices;
-  // change here !!!!!!!!
   const listPrompts = [hs_main, collegeChoices.colleges, collegeLoan["Financial Options"], jobOptions.jobOffers, retirement.choices, disaster.choices, house.choices];
   const ages =        [15,      18,                      18,                            22,                    26,                 35,               42];
-  const status =      ["HS",    "College",               "College",                     "Working",             "Working",          "Working",        "Working"];
+  const status =      ["High School","College",          "College",                     "Working",             "Working",          "Working",        "Working"];
 
   function increasePromptCounter() {
     if (promptCounter + 1 >= listPrompts.length) {
@@ -57,8 +56,11 @@ const Page = () => {
     console.log("Selected: ", selection);
     setChoices([...choices, selection]);
 
+    let newBalance = bankAccountBalance;
+
     if ("Balance Change" in selection) {
-        setBankAccountBalance(bankAccountBalance + selection["Balance Change"]);
+        console.log("Balance Change: ", selection["Balance Change"]);
+        newBalance += selection["Balance Change"];
     }
     if ("Salary Number" in selection) {
         setSalary(selection["Salary Number"]);
@@ -77,7 +79,8 @@ const Page = () => {
             setLiabilities(liabilities + selection["Liabilities Change"]);
         }
     }
-    setBankAccountBalance(bankAccountBalance + salary);
+    newBalance += salary;
+    setBankAccountBalance(newBalance);
 
     increasePromptCounter();
 };
