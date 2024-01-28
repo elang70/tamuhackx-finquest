@@ -4,9 +4,28 @@ import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 import InitialPrompt from '../components/initial_prompt';
 import HSJobPrompt from '../components/HSJobPrompt.js';
+import hs_job from '../data/hs_main.json';
+import collegeChoices from '../data/colleges.json';
 
 const Page = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const [promptCounter, setPromptCounter] = useState(0);
+    const [choices, setChoices] = useState([]);
+
+    const hs_main = hs_job.choices;
+
+    const listPrompts = [hs_main, collegeChoices.colleges]
+
+    function increasePromptCounter() {
+        if (promptCounter >= choices.length) {
+            setPromptCounter(promptCounter);
+        }
+        else {
+            setPromptCounter(promptCounter + 1);
+
+        }
+
+    }
 
     useEffect(() => {
         setIsOpen(true);
@@ -16,11 +35,13 @@ const Page = () => {
         setIsOpen(false);
     }
 
+
     const [selectedJob, setSelectedJob] = useState(null);
 
-    const handleJobSelection = (job) => {
-        console.log("Job selected: ", job);
-        setSelectedJob(job);
+    const handleSelection = (selection) => {
+        setPromptCounter(promptCounter + 1);
+        console.log("Selected: ", selection);
+        setChoices(...choices, selection);
     };
 
     return (
@@ -34,7 +55,19 @@ const Page = () => {
 
 
             <div> 
-                <button>Advance to next stage</button>    
+                <Popup trigger=
+                {<button> Advance to next stage </button>} 
+                modal nested>
+                {
+                    close => (
+                        <div className='modal'>
+                            <div className='content'>
+                                <HSJobPrompt closeModal={close} onSelect={handleSelection}  prompts={listPrompts[promptCounter]} />
+                            </div>
+                        </div>
+                    )
+                }
+            </Popup> 
                 <p>Money: $20</p>    
             </div>
             <div>
@@ -86,19 +119,7 @@ const Page = () => {
                     )
                 }
             </Popup>
-            <Popup trigger=
-                {<button> Occupation </button>} 
-                modal nested>
-                {
-                    close => (
-                        <div className='modal'>
-                            <div className='content'>
-                                <HSJobPrompt closeModal={close} onJobSelect={handleJobSelection} />
-                            </div>
-                        </div>
-                    )
-                }
-            </Popup>
+
             </div>
             
             

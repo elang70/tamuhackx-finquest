@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import Summary from "./summary_content/summary_page";
 
 export default function Home() {
   return (
@@ -20,6 +21,9 @@ export default function Home() {
           <a>Investment</a> 
         </li>
       </ul>
+
+      <Summary></Summary>
+
     </>
   );
 }
