@@ -12,6 +12,7 @@ import disaster from "../data/disaster.json";
 import house from "../data/house.json";
 import jobOptions from "../data/job_options.json";
 import retirement from "../data/retirement.json";
+import SideQuestsNav from "../components/side_quests_nav.js";
 
 const Page = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -110,7 +111,7 @@ const Page = () => {
               <div className="content">{""}</div>
               <div>
                 <button onClick={() => close()}>
-                  <InitialPrompt />
+                  <SideQuestsNav />
                 </button>
               </div>
             </div>
