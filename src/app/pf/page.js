@@ -123,17 +123,18 @@ const mystyle = {
         </button>
       </Popup>
 
-      <div className="container1">
+      <div className="container">
         <Lottie animationData={animationData4} className={styles.dollar}></Lottie>
-        <p className="money">Money: ${bankAccountBalance}</p>
       </div>
       <div>
-        <h1>FinQuest</h1>
-        <h2>Stage {promptCounter+1}</h2>
-        <h3>Journey: Personal Finance</h3>
-        <h4>Name: Bob</h4>
-        <h4>Age: {ages[promptCounter]}</h4>
-        <h4>Status: {status[promptCounter]}</h4>
+        <div className={styles.container2}>
+          <h1 className={styles.spacing}>FinQuest</h1>
+          <h2 className={styles.spacing}>Stage {promptCounter+1}</h2>
+          <h3 className={styles.spacing}>Journey: Personal Finance</h3>
+          <h4 className={styles.spacing}>Name: Bob</h4>
+          <h4 className={styles.spacing}>Age: {ages[promptCounter]}</h4>
+          <h4 className={styles.spacing}>Status: {status[promptCounter]}</h4>
+        </div>
 
         {choices.map((dataObject) => (
           <button>
