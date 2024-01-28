@@ -6,7 +6,7 @@ import { vacationPlanning } from '../data/calculations.js';
 import styles from './side_quests_style.module.css';
 import "reactjs-popup/dist/index.css";
 
-function SideQuestsNav({ handleSideQuest, salary, liabilities, balance }) {
+function SideQuestsNav({ handleSideQuest, salary, liabilities, balance, closeModal }) {
     const handleButtonClick = (quest) => {
         // Call the desired function based on the quest
         switch (quest) {
@@ -29,6 +29,7 @@ function SideQuestsNav({ handleSideQuest, salary, liabilities, balance }) {
             default:
                 break;
         }
+        closeModal();
     };
 
     // return (

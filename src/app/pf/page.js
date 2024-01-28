@@ -103,7 +103,7 @@ const handleSideQuest = (effect, value, quest) => {
         default:
             break;
     }
-    
+
     setChoices([...choices, {side_quest:quest, effect:value[1]}]);
 };
 
@@ -136,14 +136,14 @@ const mystyle = {
           <h4 className={styles.spacing}>Status: {status[promptCounter]}</h4>
         </div>
       </div>
-      
+
       <div>
         <Popup trigger={<button className="bigButton" style={{marginRight:10, marginBottom:10, marginTop:10}}> Side Quests </button>} modal nested>
           {(close) => (
             <div className="modal">
               <div className="content">{""}</div>
               <div>
-                  <SideQuestsNav handleSideQuest={handleSideQuest} salary={salary} liabilities={liabilities} balance={bankAccountBalance} />
+                  <SideQuestsNav handleSideQuest={handleSideQuest} salary={salary} liabilities={liabilities} balance={bankAccountBalance} closeModal={close}/>
               </div>
               <div className={styles.center}>
                 <button className="bigButton" onClick={() => close()}>Close</button>
