@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./next_stage_style.css";
 
-function HSJobPrompt({ closeModal, onSelect, prompts }) {
+function HSJobPrompt({ closeModal, onSelect, prompts, promptDesc }) {
   const handleJobSelection = (dataObject) => {
     onSelect(dataObject);
     closeModal();
@@ -30,7 +30,7 @@ function HSJobPrompt({ closeModal, onSelect, prompts }) {
   // );
   return (
     <div className="modal" style={getStyles().modal}>
-      <h2 className="title" style={getStyles().title}>New Decision</h2>
+      <h2 className="title" style={getStyles().title}>{promptDesc}</h2>
       <div className="promptListing" style={getStyles().promptListing}>
         {prompts.map((dataObject) => (
           <button

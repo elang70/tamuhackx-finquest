@@ -29,6 +29,7 @@ const Page = () => {
   const [liabilities, setLiabilities] = useState(0);
 
   const hs_main = hs_job.choices;
+  const data_raw =    [hs_job, collegeChoices, collegeLoan, jobOptions, retirement, disaster, house];
   const listPrompts = [hs_main, collegeChoices.colleges, collegeLoan["Financial Options"], jobOptions.jobOffers, retirement.choices, disaster.choices, house.choices];
   const ages =        [15,      18,                      18,                            22,                    26,                 35,               42];
   const status =      ["High School","College",          "College",                     "Working",             "Working",          "Working",        "Working"];
@@ -53,6 +54,9 @@ const Page = () => {
   const [selectedJob, setSelectedJob] = useState(null);
 
   const handleSelection = (selection) => {
+
+    selection["Lesson"] = data_raw[promptCounter].lesson;
+
     console.log("Selected: ", selection);
     setChoices([...choices, selection]);
 
@@ -177,6 +181,7 @@ const mystyle = {
                     closeModal={close}
                     onSelect={handleSelection}
                     prompts={listPrompts[promptCounter]}
+                    promptDesc={data_raw[promptCounter].prompt}
                   />
                 </div>
               </div>
