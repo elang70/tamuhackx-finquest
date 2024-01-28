@@ -1,12 +1,12 @@
 // Import necessary dependencies
 import React from 'react';
-
+import './initial_prompt.css'; // Import the CSS file
 // Define the Profile function component
 function Initial() {
     return (
       <>
         <h1>The start of your personal finance journey!</h1>
-        <h2>Here's the basics:</h2>
+        <h2 className='smallHeader'>Here's the basics:</h2>
         <ul>
             <li> 
                 In this game, you will advance through 5 main stages of 
@@ -28,7 +28,7 @@ function Initial() {
             </li>
               
         </ul>
-        <h2>First Task:</h2>
+        <h2 className='smallHeader'>First Task:</h2>
         <p>
             You are 15! You have just started high school and you 
             want to learn more about personal finance. You decide to

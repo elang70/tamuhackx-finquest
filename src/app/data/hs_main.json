@@ -1,44 +1,43 @@
 {
-    "age_range": "15-17",
-    "prompt": "You're a 15-year-old high school student eager to start earning your own money. You have several job options to consider:",
-    "choices": [
-      {
-        "job": "Work at McDonald's",
-        "hourly_rate": 8,
-        "hours_per_week": 15,
-        "duration_in_weeks": 52,
-        "balance_change": 6240,
-        "assets_change": 0,
-        "liabilities_change": 0
-      },
-      {
-        "job": "Tutoring Job",
-        "hourly_rate": 15,
-        "hours_per_week": 10,
-        "duration_in_weeks": 52,
-        "balance_change": 7800,
-        "assets_change": 0,
-        "liabilities_change": 0
-      },
-      {
-        "job": "Lawn Mowing in Summer",
-        "hourly_rate": 20,
-        "hours_per_week": 15,
-        "weeks_in_summer": 15,
-        "balance_change": 4500,
-        "assets_change": 0,
-        "liabilities_change": 0
-      },
-      {
-        "job": "Do Not Take a Job",
-        "hourly_rate": 0,
-        "hours_per_week": 0,
-        "duration_in_weeks": 0,
-        "balance_change": 0,
-        "assets_change": 0,
-        "liabilities_change": 0
-      }
-    ],
-    "lesson": "Choosing the right job at this stage of life is crucial for your financial growth. The best job option is the tutoring job, as it offers the highest hourly rate, flexible hours, and the potential to save and invest your earnings. Identify your strengths, market yourself, budget, save, and consider wise investments to build your financial future."
-  }
-  
+  "ageRange": "15-17",
+  "prompt": "You're a 15-year-old high school student eager to start earning your own money. You have several job options to consider:",
+  "choices": [
+    {
+      "Job": "Work at McDonald's",
+      "Hourly Rate": 8,
+      "Hours Per Week": 15,
+      "Duration In Weeks": 52,
+      "Balance Change": 6240,
+      "Assets Change": 0,
+      "Liabilities Change": 0
+    },
+    {
+      "Job": "Tutoring Job",
+      "Hourly Rate": 15,
+      "Hours Per Week": 10,
+      "Duration In Weeks": 52,
+      "Balance Change": 7800,
+      "Assets Change": 0,
+      "Liabilities Change": 0
+    },
+    {
+      "Job": "Lawn Mowing in Summer",
+      "Hourly Rate": 20,
+      "Hours Per Week": 15,
+      "Weeks In Summer": 15,
+      "Balance Change": 4500,
+      "Assets Change": 0,
+      "Liabilities Change": 0
+    },
+    {
+      "Job": "Do Not Take a Job",
+      "Hourly Rate": 0,
+      "Hours Per Week": 0,
+      "Duration In Weeks": 0,
+      "Balance Change": 0,
+      "Assets Change": 0,
+      "Liabilities Change": 0
+    }
+  ],
+  "lesson": "Choosing the right job at this stage of life is crucial for your financial growth. The best job option is the tutoring job, as it offers the highest hourly rate, flexible hours, and the potential to save and invest your earnings. Identify your strengths, market yourself, budget, save, and consider wise investments to build your financial future."
+}

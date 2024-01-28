@@ -13,6 +13,8 @@ import house from "../data/house.json";
 import jobOptions from "../data/job_options.json";
 import retirement from "../data/retirement.json";
 import SideQuestsNav from "../components/side_quests_nav.js";
+// import Summary from "../summary_content/summary_page.js";
+import './page.module.css';
 
 const Page = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -61,7 +63,7 @@ const Page = () => {
     <>
       <Popup open={isOpen} closeOnDocumentClick onClose={closeModal}>
         <InitialPrompt />
-        <button onClick={closeModal}>
+        <button className="bigButton" onClick={closeModal}>
           Click to open your first bank account and start your financial
           journey!
         </button>
