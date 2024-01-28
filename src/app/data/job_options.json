@@ -1,11 +1,11 @@
 {
-  "job_offers": [
+  "jobOffers": [
     {
-      "label": "Option 1",
-      "title": "Senior Software Engineer at Tech Innovators Inc.",
-      "salary": "$90,000 per year",
-      "salary_number": 90000,
-      "benefits": [
+      "Label": "Option 1",
+      "Title": "Senior Software Engineer at Tech Innovators Inc.",
+      "Salary": "$90,000 per year",
+      "Salary Number": 90000,
+      "Benefits": [
         "Comprehensive health insurance",
         "401(k) retirement plan with employer match",
         "Stock options and performance bonuses",
@@ -13,20 +13,20 @@
         "Professional development opportunities",
         "On-site fitness center"
       ],
-      "location": "Austin, Texas",
-      "opportunities_for_growth": "Lead projects and mentorship programs",
-      "working_hours": "40 hours per week, occasional overtime during critical projects",
-      "drawbacks": [
+      "Location": "Austin, Texas",
+      "Opportunities for Growth": "Lead projects and mentorship programs",
+      "Working Hours": "40 hours per week, occasional overtime during critical projects",
+      "Drawbacks": [
         "High competition for advancement",
         "Potential for increased workload during project deadlines"
       ]
     },
     {
-      "label": "Option 2",
-      "title": "Data Scientist at Data Insights Co.",
-      "salary": "$85,000 per year",
-      "salary_number": 85000,
-      "benefits": [
+      "Label": "Option 2",
+      "Title": "Data Scientist at Data Insights Co.",
+      "Salary": "$85,000 per year",
+      "Salary Number": 85000,
+      "Benefits": [
         "Health, dental, and vision insurance coverage",
         "Flexible work schedule",
         "Profit-sharing and performance bonuses",
@@ -34,20 +34,20 @@
         "Continuous learning and development programs",
         "Casual dress code"
       ],
-      "location": "Denver, Colorado",
-      "opportunities_for_growth": "Specialization in advanced analytics",
-      "working_hours": "Standard 9-to-5 schedule, occasional remote work options",
-      "drawbacks": [
+      "Location": "Denver, Colorado",
+      "Opportunities for Growth": "Specialization in advanced analytics",
+      "Working Hours": "Standard 9-to-5 schedule, occasional remote work options",
+      "Drawbacks": [
         "Potential for tight project deadlines",
         "Limited opportunities for leadership roles"
       ]
     },
     {
-      "label": "Option 3",
-      "title": "Product Manager at Global Innovations Corp.",
-      "salary": "$95,000 per year",
-      "salary_number": 95000,
-      "benefits": [
+      "Label": "Option 3",
+      "Title": "Product Manager at Global Innovations Corp.",
+      "Salary": "$95,000 per year",
+      "Salary Number": 95000,
+      "Benefits": [
         "Comprehensive health and dental coverage",
         "401(k) retirement plan with company match",
         "Profit-sharing and stock options",
@@ -55,20 +55,20 @@
         "Opportunities for global project involvement",
         "Regular team-building events"
       ],
-      "location": "San Francisco, California",
-      "opportunities_for_growth": "Lead cross-functional teams and strategic planning",
-      "working_hours": "Varied schedule based on project demands",
-      "drawbacks": [
+      "Location": "San Francisco, California",
+      "Opportunities for Growth": "Lead cross-functional teams and strategic planning",
+      "Working Hours": "Varied schedule based on project demands",
+      "Drawbacks": [
         "High cost of living in San Francisco",
         "Potential for extensive travel"
       ]
     },
     {
-      "label": "Option 4",
-      "title": "Mechanical Engineer at Precision Machines Co.",
-      "salary": "$80,000 per year",
-      "salary_number": 80000,
-      "benefits": [
+      "Label": "Option 4",
+      "Title": "Mechanical Engineer at Precision Machines Co.",
+      "Salary": "$80,000 per year",
+      "Salary Number": 80000,
+      "Benefits": [
         "Health insurance and retirement benefits",
         "Tuition reimbursement for further education",
         "Opportunities for skill development",
@@ -76,20 +76,20 @@
         "Potential for leadership roles",
         "Casual work environment"
       ],
-      "location": "Detroit, Michigan",
-      "opportunities_for_growth": "Innovation in manufacturing processes",
-      "working_hours": "Standard 9-to-5 schedule with occasional overtime",
-      "drawbacks": [
+      "Location": "Detroit, Michigan",
+      "Opportunities for Growth": "Innovation in manufacturing processes",
+      "Working Hours": "Standard 9-to-5 schedule with occasional overtime",
+      "Drawbacks": [
         "Potential for intense workload during production peaks",
         "Limited exposure to cutting-edge technologies"
       ]
     },
     {
-      "label": "Option 5",
-      "title": "AI Research Scientist at Future Tech Labs",
-      "salary": "$100,000 per year",
-      "salary_number": 100000,
-      "benefits": [
+      "Label": "Option 5",
+      "Title": "AI Research Scientist at Future Tech Labs",
+      "Salary": "$100,000 per year",
+      "Salary Number": 100000,
+      "Benefits": [
         "Health, dental, and vision coverage",
         "401(k) retirement plan with employer match",
         "Stock options and performance bonuses",
@@ -97,20 +97,20 @@
         "Access to cutting-edge AI research projects",
         "Regular academic collaborations"
       ],
-      "location": "Cambridge, Massachusetts",
-      "opportunities_for_growth": "Lead AI research initiatives and collaborate with academia",
-      "working_hours": "Flexible schedule based on research demands",
-      "drawbacks": [
+      "Location": "Cambridge, Massachusetts",
+      "Opportunities for Growth": "Lead AI research initiatives and collaborate with academia",
+      "Working Hours": "Flexible schedule based on research demands",
+      "Drawbacks": [
         "High competition for AI research projects",
         "Potential for long hours during critical research phases"
       ]
     },
     {
-      "label": "Enticing Option",
-      "title": "Tech Evangelist at NextGen Innovations",
-      "salary": "$110,000 per year",
-      "salary_number": 110000,
-      "benefits": [
+      "Label": "Enticing Option",
+      "Title": "Tech Evangelist at NextGen Innovations",
+      "Salary": "$110,000 per year",
+      "Salary Number": 110000,
+      "Benefits": [
         "Premium health and dental insurance coverage",
         "Generous stock options and performance-based bonuses",
         "Flexible work hours and unlimited paid time off",
@@ -118,10 +118,10 @@
         "Opportunities for global tech evangelism",
         "Luxury company retreats"
       ],
-      "location": "Seattle, Washington",
-      "opportunities_for_growth": "Lead global tech advocacy initiatives",
-      "working_hours": "Flexible schedule with occasional travel",
-      "drawbacks": [
+      "Location": "Seattle, Washington",
+      "Opportunities for Growth": "Lead global tech advocacy initiatives",
+      "Working Hours": "Flexible schedule with occasional travel",
+      "Drawbacks": [
         "High expectations for public visibility",
         "Potential for stress due to constant industry engagement"
       ]

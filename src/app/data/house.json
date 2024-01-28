@@ -1,35 +1,34 @@
 {
-    "age_range": "28-30",
-    "prompt": "You're in the market to buy your first house, and you have several complex options to consider. Your choices are:",
-    "choices": [
-      {
-        "decision": "Best Choice",
-        "description": "Opt for an affordable starter home within your budget, secure a mortgage with a reasonable interest rate, and also decide to have roommates to share expenses. This allows you to build equity while managing costs effectively.",
-        "liabilities_change": 100000
-      },
-      {
-        "decision": "Good Choice",
-        "description": "Decide to purchase your dream home, which is more expensive, and take out a larger mortgage. However, engage in meticulous financial planning to ensure you can manage the higher costs effectively.",
-        "liabilities_change": 300000
-      },
-      {
-        "decision": "Bad Choice - Renting a House",
-        "description": "Choose to rent a house instead of buying one. However, invest the money you would have spent on a mortgage into other ventures, which require careful management and carry their own risks.",
-        "liabilities_change": 0,
-        "balance_change": -12000
-      },
-      {
-        "decision": "Worst Choice - Buying a Fixer-Upper",
-        "description": "Purchase a fixer-upper home at a reasonable price and plan to renovate it. While it may be cost-effective in the long run, it requires significant time and effort to manage the renovations.",
-        "liabilities_change": 150000,
-        "balance_change": -8000
-      }
-    ],
-    "lesson": {
-      "Best Choice": "Choosing an affordable starter home, securing a reasonable mortgage, and having roommates to share expenses can be a balanced approach to home ownership and financial stability. It's the best choice for managing costs effectively and building equity.",
-      "Good Choice": "Purchasing a more expensive dream home requires meticulous financial planning to manage the higher costs effectively. While it fulfills your desires, it comes with a larger debt burden.",
-      "Bad Choice - Renting a House": "Renting a house while investing your savings in other ventures can be a complex financial strategy, requiring careful management and risk assessment. It offers flexibility but doesn't allow you to build equity.",
-      "Worst Choice - Buying a Fixer-Upper": "Buying a fixer-upper and renovating it can be cost-effective but demands significant time and effort for managing the renovations. It's the worst choice as it may lead to unexpected expenses and financial strain."
+  "ageRange": "28-30",
+  "prompt": "You're in the market to buy your first house, and you have several complex options to consider. Your choices are:",
+  "choices": [
+    {
+      "Decision": "Best Choice",
+      "Description": "Opt for an affordable starter home within your budget, secure a mortgage with a reasonable interest rate, and also decide to have roommates to share expenses. This allows you to build equity while managing costs effectively.",
+      "Liabilities Change": 100000
+    },
+    {
+      "Decision": "Good Choice",
+      "Description": "Decide to purchase your dream home, which is more expensive, and take out a larger mortgage. However, engage in meticulous financial planning to ensure you can manage the higher costs effectively.",
+      "Liabilities Change": 300000
+    },
+    {
+      "Decision": "Bad Choice - Renting a House",
+      "Description": "Choose to rent a house instead of buying one. However, invest the money you would have spent on a mortgage into other ventures, which require careful management and carry their own risks.",
+      "Liabilities Change": 0,
+      "Balance Change": -12000
+    },
+    {
+      "Decision": "Worst Choice - Buying a Fixer-Upper",
+      "Description": "Purchase a fixer-upper home at a reasonable price and plan to renovate it. While it may be cost-effective in the long run, it requires significant time and effort to manage the renovations.",
+      "Liabilities Change": 150000,
+      "Balance Change": -8000
     }
+  ],
+  "lesson": {
+    "Best Choice": "Choosing an affordable starter home, securing a reasonable mortgage, and having roommates to share expenses can be a balanced approach to home ownership and financial stability. It's the best choice for managing costs effectively and building equity.",
+    "Good Choice": "Purchasing a more expensive dream home requires meticulous financial planning to manage the higher costs effectively. While it fulfills your desires, it comes with a larger debt burden.",
+    "Bad Choice - Renting a House": "Renting a house while investing your savings in other ventures can be a complex financial strategy, requiring careful management and risk assessment. It offers flexibility but doesn't allow you to build equity.",
+    "Worst Choice - Buying a Fixer-Upper": "Buying a fixer-upper and renovating it can be cost-effective but demands significant time and effort for managing the renovations. It's the worst choice as it may lead to unexpected expenses and financial strain."
   }
-  
+}
