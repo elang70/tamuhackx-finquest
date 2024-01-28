@@ -4,6 +4,7 @@ import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
 import InitialPrompt from "../components/initial_prompt";
 import HSJobPrompt from "../components/HSJobPrompt.js";
+import BankingPrompt from "../components/BankingPrompt.js";
 import hs_job from "../data/hs_main.json";
 import collegeChoices from "../data/colleges.json";
 import Summary from "../summary_content/summary_page.js"
@@ -28,8 +29,8 @@ const Page = () => {
   const [liabilities, setLiabilities] = useState(0);
 
   const hs_main = hs_job.choices;
-
-  const listPrompts = [hs_main, collegeChoices.colleges, collegeLoan.financial_options, jobOptions.job_offers, retirement.choices, disaster.choices, house.choices];
+  // change here !!!!!!!!
+  const listPrompts = [hs_main, collegeChoices.colleges, collegeLoan["Financial Options"], jobOptions.jobOffers, retirement.choices, disaster.choices, house.choices];
   const ages =        [15,      18,                      18,                            22,                    26,                 35,               42];
   const status =      ["HS",    "College",               "College",                     "Working",             "Working",          "Working",        "Working"];
 
@@ -56,18 +57,27 @@ const Page = () => {
     console.log("Selected: ", selection);
     setChoices([...choices, selection]);
 
-    if ("balance_change" in selection) {
-        setBankAccountBalance(bankAccountBalance + selection.balance_change);
+    if ("Balance Change" in selection) {
+        setBankAccountBalance(bankAccountBalance + selection["Balance Change"]);
     }
-    if ("salary" in selection) {
-        setSalary(selection.salary);
+    if ("Salary Number" in selection) {
+        setSalary(selection["Salary Number"]);
     }
-    if ("assets_change" in selection) {
-        setAssets(assets + selection.assets_change);
+    if ("Assets Change" in selection) {
+        if (assets + selection["Assets Change"] < 0) {
+            setAssets(0);
+        } else {
+            setAssets(assets + selection["Assets Change"]);
+        }
     }
-    if ("liabilities_change" in selection) {
-        setLiabilities(liabilities + selection.liabilities_change);
+    if ("Liabilities Change" in selection) {
+        if (liabilities + selection["Liabilities Change"] < 0) {
+            setLiabilities(0);
+        } else {
+            setLiabilities(liabilities + selection["Liabilities Change"]);
+        }
     }
+    setBankAccountBalance(bankAccountBalance + salary);
 
     increasePromptCounter();
 };
@@ -151,10 +161,10 @@ const handleSideQuest = (effect, value, quest) => {
           {(close) => (
             <div className="modal">
               <div className="content">
-                {"Content of the popup (to be replaced with a popup component)"}
+                <BankingPrompt assets={assets} liabilities={liabilities} bankAccountBalance={bankAccountBalance} salary={salary} />
               </div>
               <div>
-                <button onClick={() => close()}>Close modal</button>
+                <button onClick={() => close()}>Close</button>
               </div>
             </div>
           )}

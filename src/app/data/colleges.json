@@ -1,34 +1,32 @@
 {
-    "colleges": [
-      {
-        "name": "Community College",
-        "tuition_cost": 2000,
-        "balance_change": 0,
-        "assets_change": 0,
-        "liabilities_change": 0,
-        "educational_benefits": "Strong foundational courses, exploration of interests, potential for transfer.",
-        "career_impact": "Cost-effective start, flexibility in choosing major, potential seamless transition."
-      },
-      {
-        "name": "State School",
-        "tuition_cost": 8000,
-        "balance_change": 0,
-        "assets_change": 0,
-        "liabilities_change": 0,
-        "educational_benefits": "Diverse academic programs, access to resources, networking opportunities.",
-        "career_impact": "Balanced education, potential for internships, connections with industry professionals."
-      },
-      {
-        "name": "Private University",
-        "tuition_cost": 20000,
-        "balance_change": 0,
-        "assets_change": 0,
-        "liabilities_change": 0,
-        "educational_benefits": "Specialized programs, renowned faculty, extensive alumni networks.",
-        "career_impact": "Prestigious degree, access to exclusive opportunities, potentially higher starting salaries."
-      }
-    ],
-    "lesson": "Here's a brief overview of the benefits and disadvantages of community colleges, state schools, and private universities:\n\n**Community College:**\nCommunity colleges offer several advantages, especially for those looking to save on tuition costs and explore different academic paths. They are typically more affordable than four-year institutions, providing an accessible entry point to higher education. Community colleges often have smaller class sizes, allowing for more personalized attention and support. However, they may have limited program offerings and may not provide the same level of prestige as larger institutions.\n\n**State School:**\nState universities, being funded by state governments, often offer a balance between affordability and a diverse range of academic programs. They provide opportunities for in-state residents to access quality education at a lower cost than private universities. State schools frequently have robust athletic programs, a variety of extracurricular activities, and diverse student populations. However, state schools may face budget constraints, leading to larger class sizes, and some programs may not be as well-funded as those in private universities.\n\n**Private University:**\nPrivate universities are known for their academic excellence, well-funded programs, and extensive resources. They often attract renowned faculty, offer state-of-the-art facilities, and provide a broad range of majors and extracurricular activities. However, the higher tuition costs can be a significant drawback, leading to increased student loan debt. Private universities may also have more competitive admissions processes, and some students may find the larger class sizes and emphasis on research over teaching to be less personalized.\n\nChoosing the right type of institution depends on individual preferences, financial considerations, and career goals. Community colleges can be a cost-effective starting point, state schools offer a balance between affordability and opportunities, while private universities provide a prestigious environment with extensive resources but at a higher cost."
-      
-  }
-  
+  "colleges": [
+    {
+      "Name": "Community College",
+      "Tuition Cost": 2000,
+      "Balance Change": 0,
+      "Assets Change": 0,
+      "Liabilities Change": 0,
+      "Educational Benefits": "Strong foundational courses, exploration of interests, potential for transfer.",
+      "Career Impact": "Cost-effective start, flexibility in choosing major, potential seamless transition."
+    },
+    {
+      "Name": "State School",
+      "Tuition Cost": 8000,
+      "Balance Change": 0,
+      "Assets Change": 0,
+      "Liabilities Change": 0,
+      "Educational Benefits": "Diverse academic programs, access to resources, networking opportunities.",
+      "Career Impact": "Balanced education, potential for internships, connections with industry professionals."
+    },
+    {
+      "Name": "Private University",
+      "Tuition Cost": 20000,
+      "Balance Change": 0,
+      "Assets Change": 0,
+      "Liabilities Change": 0,
+      "Educational Benefits": "Specialized programs, renowned faculty, extensive alumni networks.",
+      "Career Impact": "Prestigious degree, access to exclusive opportunities, potentially higher starting salaries."
+    }
+  ],
+  "Lesson": "Here's a brief overview of the benefits and disadvantages of community colleges, state schools, and private universities:\n\n**Community College:**\nCommunity colleges offer several advantages, especially for those looking to save on tuition costs and explore different academic paths. They are typically more affordable than four-year institutions, providing an accessible entry point to higher education. Community colleges often have smaller class sizes, allowing for more personalized attention and support. However, they may have limited program offerings and may not provide the same level of prestige as larger institutions.\n\n**State School:**\nState universities, being funded by state governments, often offer a balance between affordability and a diverse range of academic programs. They provide opportunities for in-state residents to access quality education at a lower cost than private universities. State schools frequently have robust athletic programs, a variety of extracurricular activities, and diverse student populations. However, state schools may face budget constraints, leading to larger class sizes, and some programs may not be as well-funded as those in private universities.\n\n**Private University:**\nPrivate universities are known for their academic excellence, well-funded programs, and extensive resources. They often attract renowned faculty, offer state-of-the-art facilities, and provide a broad range of majors and extracurricular activities. However, the higher tuition costs can be a significant drawback, leading to increased student loan debt. Private universities may also have more competitive admissions processes, and some students may find the larger class sizes and emphasis on research over teaching to be less personalized.\n\nChoosing the right type of institution depends on individual preferences, financial considerations, and career goals. Community colleges can be a cost-effective starting point, state schools offer a balance between affordability and opportunities, while private universities provide a prestigious environment with extensive resources but at a higher cost."
+}
