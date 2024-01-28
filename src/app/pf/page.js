@@ -1,109 +1,128 @@
 "use client";
-import React, { useState, useEffect } from 'react';
-import Popup from 'reactjs-popup';
-import 'reactjs-popup/dist/index.css';
-import InitialPrompt from '../components/initial_prompt';
-import HSJobPrompt from '../components/HSJobPrompt.js';
+import React, { useState, useEffect } from "react";
+import Popup from "reactjs-popup";
+import "reactjs-popup/dist/index.css";
+import InitialPrompt from "../components/initial_prompt";
+import HSJobPrompt from "../components/HSJobPrompt.js";
+import hs_job from "../data/hs_main.json";
+import collegeChoices from "../data/colleges.json";
+import Summary from "../summary_content/summary_page.js"
 
 const Page = () => {
-    const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const [promptCounter, setPromptCounter] = useState(0);
+  const [choices, setChoices] = useState([]);
+  const [done, setDone] = useState(false);
 
-    useEffect(() => {
-        setIsOpen(true);
-    }, []);
+  const hs_main = hs_job.choices;
 
-    const closeModal = () => {
-        setIsOpen(false);
+  const listPrompts = [hs_main, collegeChoices.colleges];
+
+  function increasePromptCounter() {
+    console.log("Prompt Counter: ", promptCounter);
+    console.log("List Prompts Length: ", listPrompts.length);
+    if (promptCounter + 1 >= listPrompts.length) {
+      setDone(true);
+      document.getElementById("advancebtn").disabled = true;
+    } else {
+      setPromptCounter(promptCounter + 1);
     }
+  }
 
-    const [selectedJob, setSelectedJob] = useState(null);
+  useEffect(() => {
+    setIsOpen(true);
+  }, []);
 
-    const handleJobSelection = (job) => {
-        console.log("Job selected: ", job);
-        setSelectedJob(job);
-    };
+  const closeModal = () => {
+    setIsOpen(false);
+  };
 
-    return (
-        <>
-            <Popup open={isOpen} closeOnDocumentClick onClose={closeModal}>
-                <InitialPrompt />
-                <button onClick={closeModal}>
-                    Click to open your first bank account and start your financial journey!
+  const [selectedJob, setSelectedJob] = useState(null);
+
+  const handleSelection = (selection) => {
+    console.log("Selected: ", selection);
+    setChoices([...choices, selection]);
+    // setPromptCounter(promptCounter + 1);
+    increasePromptCounter();
+};
+
+  return (
+    <>
+      <Popup open={isOpen} closeOnDocumentClick onClose={closeModal}>
+        <InitialPrompt />
+        <button onClick={closeModal}>
+          Click to open your first bank account and start your financial
+          journey!
+        </button>
+      </Popup>
+
+      <div>
+        <Popup trigger={<button id="advancebtn"> Advance to next stage </button>} modal nested>
+          {(close) => (
+            <div className="modal">
+              <div className="content">
+                <HSJobPrompt
+                  closeModal={close}
+                  onSelect={handleSelection}
+                  prompts={listPrompts[promptCounter]}
+                />
+              </div>
+            </div>
+          )}
+        </Popup>
+        <p>Money: $20</p>
+      </div>
+      <div>
+        <h1>FinQuest</h1>
+        <h2>Stage 1</h2>
+        <h3>Journey: Personal Finance</h3>
+        <h4>Name: Bob</h4>
+        <h4>Age: 15</h4>
+        <h4>Status HS</h4>
+
+        {choices.map((dataObject) => (
+          <button>
+            <li key={dataObject.id}>
+              {Object.entries(dataObject).map(([key, value]) => (
+                <span key={key}>
+                  <strong>{key}:</strong> {value},{" "}
+                </span>
+              ))}
+            </li>
+          </button>
+        ))}
+      </div>
+
+      <div>
+        <Popup trigger={<button> Side Quests </button>} modal nested>
+          {(close) => (
+            <div className="modal">
+              <div className="content">{""}</div>
+              <div>
+                <button onClick={() => close()}>
+                  <InitialPrompt />
                 </button>
-            </Popup>
+              </div>
+            </div>
+          )}
+        </Popup>
+        <Popup trigger={<button> Banking </button>} modal nested>
+          {(close) => (
+            <div className="modal">
+              <div className="content">
+                {"Content of the popup (to be replaced with a popup component)"}
+              </div>
+              <div>
+                <button onClick={() => close()}>Close modal</button>
+              </div>
+            </div>
+          )}
+        </Popup>
 
-
-            <div> 
-                <button>Advance to next stage</button>    
-                <p>Money: $20</p>    
-            </div>
-            <div>
-                <h1>FinQuest</h1>
-                <h2>Stage 1</h2>
-                <h3>Journey: Personal Finance</h3>
-                <h4>Name: Bob</h4>
-                <h4>Age: 15</h4>
-                <h4>Status HS</h4>
-                
-            </div>
-            
-            <div>
-            <Popup trigger=
-                {<button> Side Quests </button>} 
-                modal nested>
-                {
-                    close => (
-                        <div className='modal'>
-                            <div className='content'>
-                                {""}
-                            </div>
-                            <div>
-                                <button onClick=
-                                    {() => close()}>
-                                        <InitialPrompt />
-                                </button>
-                            </div>
-                        </div>
-                    )
-                }
-            </Popup>
-            <Popup trigger=
-                {<button> Banking </button>} 
-                modal nested>
-                {
-                    close => (
-                        <div className='modal'>
-                            <div className='content'>
-                                {"Content of the popup (to be replaced with a popup component)"}
-                            </div>
-                            <div>
-                                <button onClick=
-                                    {() => close()}>
-                                        Close modal
-                                </button>
-                            </div>
-                        </div>
-                    )
-                }
-            </Popup>
-            <Popup trigger=
-                {<button> Occupation </button>} 
-                modal nested>
-                {
-                    close => (
-                        <div className='modal'>
-                            <div className='content'>
-                                <HSJobPrompt closeModal={close} onJobSelect={handleJobSelection} />
-                            </div>
-                        </div>
-                    )
-                }
-            </Popup>
-            </div>
-            
-            
-        </>
-    );
+        {done ? <Summary></Summary> : <div></div>}
+      </div>
+    </>
+  );
 };
 
 export default Page;
