@@ -1,4 +1,4 @@
-.bigButton {
+.button {
     -webkit-border-radius: 28;
     -moz-border-radius: 28;
     border-radius: 28px;
@@ -11,7 +11,7 @@
     font-size: 50px;
   }
   
-  .bigButton:hover {
+  .button:hover {
     background: #3cb0fd;
     background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
     background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
@@ -21,18 +21,8 @@
     text-decoration: none;
   }
 
-.dollar {
-  width: 200px;
-  height: 200px;
-}
-
-.container1 {
-  display: flex;
-
-}
-
-.center {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-}
+  .center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }

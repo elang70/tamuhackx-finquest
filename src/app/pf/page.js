@@ -154,9 +154,10 @@ const mystyle = {
             <div className="modal">
               <div className="content">{""}</div>
               <div>
-                <button onClick={() => close()}>
                   <SideQuestsNav handleSideQuest={handleSideQuest} salary={salary} liabilities={liabilities} balance={bankAccountBalance} />
-                </button>
+              </div>
+              <div className={styles.center}>
+                <button className="bigButton" onClick={() => close()}>Close</button>
               </div>
             </div>
           )}
