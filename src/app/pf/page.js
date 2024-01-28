@@ -19,13 +19,18 @@ const Page = () => {
   const [choices, setChoices] = useState([]);
   const [done, setDone] = useState(false);
 
+  const salary = 0;
+  const bankAccountBalance = 500;
+  const assets = 0;
+  const liabilities = 0;
+
   const hs_main = hs_job.choices;
 
   const listPrompts = [hs_main, collegeChoices.colleges, collegeLoan.financial_options, jobOptions.job_offers, retirement.choices, disaster.choices, house.choices];
+  const ages =        [15,      18,                      18,                            22,                    26,                 35,               42];
+  const status =      ["HS",    "College",               "College",                     "Working",             "Working",          "Working",        "Working"];
 
   function increasePromptCounter() {
-    console.log("Prompt Counter: ", promptCounter);
-    console.log("List Prompts Length: ", listPrompts.length);
     if (promptCounter + 1 >= listPrompts.length) {
       setDone(true);
       document.getElementById("advancebtn").disabled = true;
@@ -75,15 +80,15 @@ const Page = () => {
             </div>
           )}
         </Popup>
-        <p>Money: $20</p>
+        <p>Money: ${bankAccountBalance}</p>
       </div>
       <div>
         <h1>FinQuest</h1>
-        <h2>Stage 1</h2>
+        <h2>Stage {promptCounter+1}</h2>
         <h3>Journey: Personal Finance</h3>
         <h4>Name: Bob</h4>
-        <h4>Age: 15</h4>
-        <h4>Status HS</h4>
+        <h4>Age: {ages[promptCounter]}</h4>
+        <h4>Status: {status[promptCounter]}</h4>
 
         {choices.map((dataObject) => (
           <button>

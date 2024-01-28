@@ -16,13 +16,13 @@
         "decision": "Bad Choice - Renting a House",
         "description": "Choose to rent a house instead of buying one. However, invest the money you would have spent on a mortgage into other ventures, which require careful management and carry their own risks.",
         "liabilities_change": 0,
-        "bank_balance_change": -12000
+        "balance_change": -12000
       },
       {
         "decision": "Worst Choice - Buying a Fixer-Upper",
         "description": "Purchase a fixer-upper home at a reasonable price and plan to renovate it. While it may be cost-effective in the long run, it requires significant time and effort to manage the renovations.",
         "liabilities_change": 150000,
-        "bank_balance_change": -8000
+        "balance_change": -8000
       }
     ],
     "lesson": {

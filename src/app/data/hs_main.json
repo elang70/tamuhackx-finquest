@@ -7,7 +7,7 @@
         "hourly_rate": 8,
         "hours_per_week": 15,
         "duration_in_weeks": 52,
-        "bank_balance_change": 6240,
+        "balance_change": 6240,
         "assets_change": 0,
         "liabilities_change": 0
       },
@@ -16,7 +16,7 @@
         "hourly_rate": 15,
         "hours_per_week": 10,
         "duration_in_weeks": 52,
-        "bank_balance_change": 7800,
+        "balance_change": 7800,
         "assets_change": 0,
         "liabilities_change": 0
       },
@@ -25,7 +25,7 @@
         "hourly_rate": 20,
         "hours_per_week": 15,
         "weeks_in_summer": 15,
-        "bank_balance_change": 4500,
+        "balance_change": 4500,
         "assets_change": 0,
         "liabilities_change": 0
       },
@@ -34,7 +34,7 @@
         "hourly_rate": 0,
         "hours_per_week": 0,
         "duration_in_weeks": 0,
-        "bank_balance_change": 0,
+        "balance_change": 0,
         "assets_change": 0,
         "liabilities_change": 0
       }
