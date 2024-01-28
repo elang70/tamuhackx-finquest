@@ -29,18 +29,56 @@ function SideQuestsNav({ handleSideQuest, salary, liabilities, balance }) {
         }
     };
 
+    // return (
+    //     <div>
+    //         <div style={{ display: 'flex', justifyContent: 'center' }}>
+    //             <button style={{ marginRight: '10px' }} onClick={() => handleButtonClick('Salary Negotiation')}>Salary Negotiation</button>
+    //             <button style={{ marginLeft: '10px' }} onClick={() => handleButtonClick('Have a Baby')}>Have a Baby</button>
+    //         </div>
+    //         <div style={{ display: 'flex', justifyContent: 'center', marginTop: '10px' }}>
+    //             <button style={{ marginRight: '10px' }} onClick={() => handleButtonClick('Buy a Car')}>Buy a Car</button>
+    //             <button style={{ marginLeft: '10px' }} onClick={() => handleButtonClick('Go on vacation')}>Go on vacation</button>
+    //         </div>
+    //     </div>
+    // );
     return (
         <div>
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-                <button style={{ marginRight: '10px' }} onClick={() => handleButtonClick('Salary Negotiation')}>Salary Negotiation</button>
-                <button style={{ marginLeft: '10px' }} onClick={() => handleButtonClick('Have a Baby')}>Have a Baby</button>
+            <div style={styles.container}>
+                <button style={styles.button} onClick={() => handleButtonClick('Salary Negotiation')}>Salary Negotiation</button>
+                <button style={{ ...styles.button, ...styles.buttonLeft }} onClick={() => handleButtonClick('Have a Baby')}>Have a Baby</button>
             </div>
-            <div style={{ display: 'flex', justifyContent: 'center', marginTop: '10px' }}>
-                <button style={{ marginRight: '10px' }} onClick={() => handleButtonClick('Buy a Car')}>Buy a Car</button>
-                <button style={{ marginLeft: '10px' }} onClick={() => handleButtonClick('Go on vacation')}>Go on vacation</button>
+            <div style={{ ...styles.container, ...styles.containerTop }}>
+                <button style={styles.button} onClick={() => handleButtonClick('Buy a Car')}>Buy a Car</button>
+                <button style={{ ...styles.button, ...styles.buttonLeft }} onClick={() => handleButtonClick('Go on vacation')}>Go on vacation</button>
             </div>
         </div>
     );
 }
+
+const styles = {
+    button: {
+        marginRight: '10px',
+        backgroundColor: '#4CAF50',
+        border: 'none',
+        color: 'white',
+        padding: '15px 32px',
+        textAlign: 'center',
+        textDecoration: 'none',
+        display: 'inline-block',
+        fontSize: '16px',
+        margin: '4px 2px',
+        cursor: 'pointer'
+    },
+    buttonLeft: {
+        marginLeft: '10px'
+    },
+    container: {
+        display: 'flex',
+        justifyContent: 'center'
+    },
+    containerTop: {
+        marginTop: '10px'
+    }
+};
 
 export default SideQuestsNav;
