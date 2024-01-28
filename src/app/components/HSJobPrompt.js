@@ -3,25 +3,19 @@ import React, { useEffect } from 'react';
 
 function HSJobPrompt( {closeModal, onSelect, prompts} ) {
 
-    const handleJobSelection = (choice) => {
-        onSelect(choice);
+    const handleJobSelection = (dataObject) => {
+        onSelect(dataObject);
         closeModal();
     };
 
-    useEffect(() => {
-      // Update the document title using the browser API
-      // document.title = `You clicked ${count} times`;
-      if (prompts == null) {
-        prompts = [];
-      }
-    });
 
 return (
     <div>
       <h2>List of Objects</h2>
         {prompts.map((dataObject) => (
-          <button onClick={handleJobSelection}>
+          <button onClick={() => handleJobSelection(dataObject)}>
           <li key={dataObject.id}>
+
             {Object.entries(dataObject).map(([key, value]) => (
               <span key={key}>
                 <strong>{key}:</strong> {value},{' '}
