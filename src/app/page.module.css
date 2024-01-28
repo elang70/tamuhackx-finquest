@@ -1,5 +1,41 @@
-.superhero {
-    width: 500px;
-    height: 500px;
+.h1 {
+    font-size: 90px;
 }
 
+.h2 {
+    font-size: 35px;
+
+}
+
+.p1 {
+    font-size: 30px;
+    width: 2400px;
+    background: #fff;
+    font-family: Montserrat, sans-serif;;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+    color: #009688;
+    padding: 40px;
+    box-shadow:
+	inset #009688 0 0 0 5px, 
+    inset #059c8e 0 0 0 1px, 
+    inset #0cab9c 0 0 0 10px, 
+    inset #1fbdae 0 0 0 11px, 
+    inset #8ce9ff 0 0 0 16px, 
+    inset #48e4d6 0 0 0 17px, 
+    inset #e5f9f7 0 0 0 21px, 
+    inset #bfecf7 0 0 0 22px;
+    text-shadow: 3px 3px 1px #bfecf7;
+    text-align: left;
+}
+
+.superhero {
+    width: 2300px;
+    height: 550px;
+}
+
+.container1 {
+    display: flex;
+    justify-content: center;
+}
