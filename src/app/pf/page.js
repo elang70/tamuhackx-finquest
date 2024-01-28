@@ -167,7 +167,7 @@ const mystyle = {
         {done ? <Summary></Summary> : <div></div>}
       </div>
       <div className={styles.advancedbtn}>
-        <Popup trigger={<button className="bigButton" id="advancebtn" style={{marginBottom:10}}> Advance to next stage </button>} modal nested>
+        <Popup trigger={<button className="bigButton disabler" id="advancebtn" style={{marginBottom:10}}> Advance to next stage </button>} modal nested>
             {(close) => (
               <div className="modal">
                 <div className="content">
