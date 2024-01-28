@@ -6,19 +6,24 @@ import InitialPrompt from "../components/initial_prompt";
 import HSJobPrompt from "../components/HSJobPrompt.js";
 import hs_job from "../data/hs_main.json";
 import collegeChoices from "../data/colleges.json";
+import Summary from "../summary_content/summary_page.js"
 
 const Page = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [promptCounter, setPromptCounter] = useState(0);
   const [choices, setChoices] = useState([]);
+  const [done, setDone] = useState(false);
 
   const hs_main = hs_job.choices;
 
   const listPrompts = [hs_main, collegeChoices.colleges];
 
   function increasePromptCounter() {
-    if (promptCounter >= choices.length) {
-      setPromptCounter(promptCounter);
+    console.log("Prompt Counter: ", promptCounter);
+    console.log("List Prompts Length: ", listPrompts.length);
+    if (promptCounter + 1 >= listPrompts.length) {
+      setDone(true);
+      document.getElementById("advancebtn").disabled = true;
     } else {
       setPromptCounter(promptCounter + 1);
     }
@@ -37,8 +42,9 @@ const Page = () => {
   const handleSelection = (selection) => {
     console.log("Selected: ", selection);
     setChoices([...choices, selection]);
-    setPromptCounter(promptCounter + 1);
-  };
+    // setPromptCounter(promptCounter + 1);
+    increasePromptCounter();
+};
 
   return (
     <>
@@ -51,7 +57,7 @@ const Page = () => {
       </Popup>
 
       <div>
-        <Popup trigger={<button> Advance to next stage </button>} modal nested>
+        <Popup trigger={<button id="advancebtn"> Advance to next stage </button>} modal nested>
           {(close) => (
             <div className="modal">
               <div className="content">
@@ -112,6 +118,8 @@ const Page = () => {
             </div>
           )}
         </Popup>
+
+        {done ? <Summary></Summary> : <div></div>}
       </div>
     </>
   );
