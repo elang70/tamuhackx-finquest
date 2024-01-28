@@ -158,7 +158,7 @@ const mystyle = {
                 <BankingPrompt assets={assets} liabilities={liabilities} bankAccountBalance={bankAccountBalance} salary={salary} />
               </div>
               <div>
-                <button onClick={() => close()}>Close</button>
+                <button className="bigButton" onClick={() => close()}>Close</button>
               </div>
             </div>
           )}

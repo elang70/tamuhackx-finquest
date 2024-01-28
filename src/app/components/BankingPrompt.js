@@ -2,7 +2,7 @@ import React from "react";
 
 function BankingPrompt({ assets, liabilities, bankAccountBalance, salary }) {
   return (
-    <div>
+    <div style={{textAlign:'center'}}>
       <h1>Financial Information</h1>
         <h2>Money: ${bankAccountBalance}</h2>
         <h2>Assets: ${assets}</h2>
