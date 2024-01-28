@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
 import "./next_stage_style.css";
+import styles from "./hsjob_style.module.css";
+import "reactjs-popup/dist/index.css";
 
 function HSJobPrompt({ closeModal, onSelect, prompts, promptDesc }) {
   const handleJobSelection = (dataObject) => {
@@ -34,8 +36,8 @@ function HSJobPrompt({ closeModal, onSelect, prompts, promptDesc }) {
       <div className="promptListing" style={getStyles().promptListing}>
         {prompts.map((dataObject) => (
           <button
-            className="prompt"
-            style={getStyles().prompt}
+            className="bigButton"
+            style={{height: 'auto', width: 'auto', padding: '15px'}}
             onClick={() => handleJobSelection(dataObject)}
           >
             <li key={dataObject.id}>
@@ -72,7 +74,8 @@ function getStyles() {
     promptListing: {
       display: 'flex',
       flexDirection: 'row',
-      alignItems: 'center'
+      alignItems: 'center',
+      justifyContent: 'center',
     },
     prompt: {
       backgroundColor: '#4CAF50',
