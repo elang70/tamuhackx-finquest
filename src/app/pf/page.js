@@ -7,6 +7,14 @@ import HSJobPrompt from "../components/HSJobPrompt.js";
 import hs_job from "../data/hs_main.json";
 import collegeChoices from "../data/colleges.json";
 import Summary from "../summary_content/summary_page.js"
+import collegeLoan from "../data/colleges_loan.json";
+import disaster from "../data/disaster.json";
+import house from "../data/house.json";
+import jobOptions from "../data/job_options.json";
+import retirement from "../data/retirement.json";
+import SideQuestsNav from "../components/side_quests_nav.js";
+// import Summary from "../summary_content/summary_page.js";
+import './page.module.css';
 
 const Page = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,13 +22,18 @@ const Page = () => {
   const [choices, setChoices] = useState([]);
   const [done, setDone] = useState(false);
 
+  const [salary, setSalary] = useState(0);
+  const [bankAccountBalance, setBankAccountBalance] = useState(500);
+  const [assets, setAssets] = useState(0);
+  const [liabilities, setLiabilities] = useState(0);
+
   const hs_main = hs_job.choices;
 
-  const listPrompts = [hs_main, collegeChoices.colleges];
+  const listPrompts = [hs_main, collegeChoices.colleges, collegeLoan.financial_options, jobOptions.job_offers, retirement.choices, disaster.choices, house.choices];
+  const ages =        [15,      18,                      18,                            22,                    26,                 35,               42];
+  const status =      ["HS",    "College",               "College",                     "Working",             "Working",          "Working",        "Working"];
 
   function increasePromptCounter() {
-    console.log("Prompt Counter: ", promptCounter);
-    console.log("List Prompts Length: ", listPrompts.length);
     if (promptCounter + 1 >= listPrompts.length) {
       setDone(true);
       document.getElementById("advancebtn").disabled = true;
@@ -42,15 +55,43 @@ const Page = () => {
   const handleSelection = (selection) => {
     console.log("Selected: ", selection);
     setChoices([...choices, selection]);
-    // setPromptCounter(promptCounter + 1);
+
+    if ("balance_change" in selection) {
+        setBankAccountBalance(bankAccountBalance + selection.balance_change);
+    }
+    if ("salary" in selection) {
+        setSalary(selection.salary);
+    }
+    if ("assets_change" in selection) {
+        setAssets(assets + selection.assets_change);
+    }
+    if ("liabilities_change" in selection) {
+        setLiabilities(liabilities + selection.liabilities_change);
+    }
+
     increasePromptCounter();
+};
+
+const handleSideQuest = (effect, value, quest) => {
+    switch (effect) {
+        case 's':
+            setSalary(value[0]);
+            break;
+        case 'b':
+            setBankAccountBalance(value[0]);
+            break;
+        default:
+            break;
+    }
+    
+    setChoices([...choices, {side_quest:quest, effect:value[1]}]);
 };
 
   return (
     <>
       <Popup open={isOpen} closeOnDocumentClick onClose={closeModal}>
         <InitialPrompt />
-        <button onClick={closeModal}>
+        <button className="bigButton" onClick={closeModal}>
           Click to open your first bank account and start your financial
           journey!
         </button>
@@ -70,15 +111,15 @@ const Page = () => {
             </div>
           )}
         </Popup>
-        <p>Money: $20</p>
+        <p>Money: ${bankAccountBalance}</p>
       </div>
       <div>
         <h1>FinQuest</h1>
-        <h2>Stage 1</h2>
+        <h2>Stage {promptCounter+1}</h2>
         <h3>Journey: Personal Finance</h3>
         <h4>Name: Bob</h4>
-        <h4>Age: 15</h4>
-        <h4>Status HS</h4>
+        <h4>Age: {ages[promptCounter]}</h4>
+        <h4>Status: {status[promptCounter]}</h4>
 
         {choices.map((dataObject) => (
           <button>
@@ -100,7 +141,7 @@ const Page = () => {
               <div className="content">{""}</div>
               <div>
                 <button onClick={() => close()}>
-                  <InitialPrompt />
+                  <SideQuestsNav handleSideQuest={handleSideQuest} salary={salary} liabilities={liabilities} balance={bankAccountBalance} />
                 </button>
               </div>
             </div>

@@ -1,33 +1,33 @@
-import React, { useEffect } from 'react';
+import React, { useEffect } from "react";
+import "./next_stage_style.css";
 
+function HSJobPrompt({ closeModal, onSelect, prompts }) {
+  const handleJobSelection = (dataObject) => {
+    onSelect(dataObject);
+    closeModal();
+  };
 
-function HSJobPrompt( {closeModal, onSelect, prompts} ) {
-
-    const handleJobSelection = (dataObject) => {
-        onSelect(dataObject);
-        closeModal();
-    };
-
-
-return (
-    <div>
-      <h2>List of Objects</h2>
+  return (
+    <div className="modal">
+      <h2 className="title">New Decision</h2>
+      <div className="promptListing">
         {prompts.map((dataObject) => (
-          <button onClick={() => handleJobSelection(dataObject)}>
-          <li key={dataObject.id}>
-
-            {Object.entries(dataObject).map(([key, value]) => (
-              <span key={key}>
-                <strong>{key}:</strong> {value},{' '}
-              </span>
-            ))}
-          </li>
+          <button
+            className="prompt"
+            onClick={() => handleJobSelection(dataObject)}
+          >
+            <li key={dataObject.id}>
+              {Object.entries(dataObject).map(([key, value]) => (
+                <div key={key}>
+                  <strong>{key}:</strong> {value}
+                </div>
+              ))}
+            </li>
           </button>
-
         ))}
+      </div>
     </div>
   );
-    
-};
+}
 
 export default HSJobPrompt;

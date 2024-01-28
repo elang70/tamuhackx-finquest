@@ -1,0 +1,45 @@
+.modal {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.title {
+    font-size: 40px;
+    margin: 5px;
+    padding: 20px;
+    padding-top: 10px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+
+.prompt {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px;
+    min-width: 200px;
+
+}
+
+.prompt:hover {
+    cursor: pointer;
+}
+
+.promptListing {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}

@@ -5,30 +5,30 @@
       {
         "decision": "Best Option - Utilize Emergency Fund",
         "description": "You use your well-funded emergency fund to cover the substantial remaining medical expenses. This preserves your financial stability without taking on any debt.",
-        "bank_balance_change": -8000,    // Medical expenses covered by emergency fund
-        "assets_change": -8000,         // Reduction in emergency fund
+        "balance_change": -8000,
+        "assets_change": -8000,
         "liabilities_change": 0
       },
       {
         "decision": "Good Option - Negotiate Payment Plan",
         "description": "You negotiate a reasonable payment plan with the medical provider to gradually pay off the substantial remaining bills. This avoids immediate financial strain.",
-        "bank_balance_change": -5000,    // Initial payment
-        "assets_change": -5000,         // Reduction in bank balance
-        "liabilities_change": 5000      // Medical debt incurred
+        "balance_change": -5000,
+        "assets_change": -5000,
+        "liabilities_change": 5000
       },
       {
         "decision": "Fair Option - Seek Financial Assistance",
         "description": "You explore options for financial assistance or charity care from the hospital or relevant organizations to alleviate the burden of the substantial remaining medical expenses.",
-        "bank_balance_change": -3000,    // Initial payment (if required)
-        "assets_change": -3000,         // Reduction in bank balance (if required)
-        "liabilities_change": 3000      // Medical debt incurred (if not fully covered)
+        "balance_change": -3000,
+        "assets_change": -3000,
+        "liabilities_change": 3000
       },
       {
         "decision": "Bad Option - Take Out a Personal Loan",
         "description": "You decide to take out a personal loan to cover the substantial remaining medical bills. While it provides immediate relief, it comes with significant interest and future debt obligations.",
-        "bank_balance_change": 10000,     // Loan received
-        "assets_change": 0,             // No change in assets
-        "liabilities_change": 10000      // Personal loan taken
+        "balance_change": 10000,
+        "assets_change": 0,
+        "liabilities_change": 10000
       }
     ],
     "lesson": {
