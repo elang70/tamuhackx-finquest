@@ -102,8 +102,7 @@ const handleSideQuest = (effect, value, quest) => {
       <Popup open={isOpen} closeOnDocumentClick onClose={closeModal}>
         <InitialPrompt />
         <button className="bigButton" onClick={closeModal}>
-          Click to open your first bank account and start your financial
-          journey!
+          Click to open your first bank account and start your financial journey!
         </button>
       </Popup>
 
