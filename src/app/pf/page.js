@@ -20,10 +20,10 @@ const Page = () => {
   const [choices, setChoices] = useState([]);
   const [done, setDone] = useState(false);
 
-  const salary = 0;
-  const bankAccountBalance = 500;
-  const assets = 0;
-  const liabilities = 0;
+  const [salary, setSalary] = useState(0);
+  const [bankAccountBalance, setBankAccountBalance] = useState(500);
+  const [assets, setAssets] = useState(0);
+  const [liabilities, setLiabilities] = useState(0);
 
   const hs_main = hs_job.choices;
 
@@ -53,7 +53,20 @@ const Page = () => {
   const handleSelection = (selection) => {
     console.log("Selected: ", selection);
     setChoices([...choices, selection]);
-    // setPromptCounter(promptCounter + 1);
+
+    if ("balance_change" in selection) {
+        setBankAccountBalance(bankAccountBalance + selection.balance_change);
+    }
+    if ("salary" in selection) {
+        setSalary(selection.salary);
+    }
+    if ("assets_change" in selection) {
+        setAssets(assets + selection.assets_change);
+    }
+    if ("liabilities_change" in selection) {
+        setLiabilities(liabilities + selection.liabilities_change);
+    }
+
     increasePromptCounter();
 };
 
