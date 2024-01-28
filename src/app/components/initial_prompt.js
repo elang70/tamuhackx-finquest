@@ -8,13 +8,14 @@ function Initial() {
         <h1>The start of your personal finance journey!</h1>
         <h2 className='smallHeader'>Here's the basics:</h2>
         <p>
-        - In this game, you will advance through 5 main stages of life ranging from high school to retirement
+        - In this game, you will advance through 8 "stages" of life where ranging from high school to retirement
         <br></br> <br></br>
         - When you advance to each stage, a prompt will appear with decisions you can make regarding your personal 
         finance
         <br></br> <br></br>
-        - Within each stage, you can also make choices based on your current financial situation such as buying a 
-        house or a car
+        - Within each stage, you can also make choices based on your current financial situation called 'side quests'
+        such as buying a car or going on vacation
+      
         <br></br> <br></br>
         - As you go, you will learn more about the basics of personal finance and good practices to follow
         </p>
