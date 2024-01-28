@@ -1,4 +1,8 @@
-export function increaseSalary() {
+
+
+
+
+export function increaseSalary(salary) {
     // Generate a random number between 0 and 1
     const random = Math.random();
 
@@ -7,12 +11,13 @@ export function increaseSalary() {
         // Calculate the increased salary (10% increase)
         salary *= 1.1;
     }
+    return [salary, ""];
 }
 
 
 
 
-export function babyBudgetDecision() {
+export function babyBudgetDecision(bankAccountBalance) {
     // Possible outcomes
     const outcomes = [
       "Receive Generous Gift",
@@ -55,11 +60,12 @@ export function babyBudgetDecision() {
     console.log(`${explanation}`);
   
     // Return the updated bank account balance
+    return [bankAccountBalance, explanation];
   }
 
 
 
-  export function carPurchaseDecision() {
+  export function carPurchaseDecision(bankAccountBalance) {
     // Initialize explanation variable
     let explanation = "";
   
@@ -81,12 +87,13 @@ export function babyBudgetDecision() {
     // Print the outcome, updated bank account balance, and explanation
     console.log(`Outcome: ${explanation}`);
     console.log(`Bank Account Balance: $${bankAccountBalance}`);
+    return [bankAccountBalance, explanation];
   }
 
   
   
 
-  export function vacationPlanning() {
+  export function vacationPlanning(liabilities, bankAccountBalance) {
     // Initialize explanation variable
     let explanation = "";
   
@@ -108,6 +115,7 @@ export function babyBudgetDecision() {
     // Print the outcome, updated bank account balance, and explanation
     console.log(`Outcome: ${explanation}`);
     console.log(`Bank Account Balance: $${bankAccountBalance}`);
+    return [bankAccountBalance, explanation];
   }
   
   

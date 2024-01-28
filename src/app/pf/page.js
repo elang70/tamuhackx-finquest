@@ -70,6 +70,21 @@ const Page = () => {
     increasePromptCounter();
 };
 
+const handleSideQuest = (effect, value, quest) => {
+    switch (effect) {
+        case 's':
+            setSalary(value[0]);
+            break;
+        case 'b':
+            setBankAccountBalance(value[0]);
+            break;
+        default:
+            break;
+    }
+    
+    setChoices([...choices, {side_quest:quest, effect:value[1]}]);
+};
+
   return (
     <>
       <Popup open={isOpen} closeOnDocumentClick onClose={closeModal}>
@@ -124,7 +139,7 @@ const Page = () => {
               <div className="content">{""}</div>
               <div>
                 <button onClick={() => close()}>
-                  <SideQuestsNav />
+                  <SideQuestsNav handleSideQuest={handleSideQuest} salary={salary} liabilities={liabilities} balance={bankAccountBalance} />
                 </button>
               </div>
             </div>
