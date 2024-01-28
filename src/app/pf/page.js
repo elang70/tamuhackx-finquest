@@ -15,7 +15,7 @@ import jobOptions from "../data/job_options.json";
 import retirement from "../data/retirement.json";
 import SideQuestsNav from "../components/side_quests_nav.js";
 // import Summary from "../summary_content/summary_page.js";
-import './page.module.css';
+import styles from './page.module.css';
 
 const Page = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -105,7 +105,7 @@ const mystyle = {
 };
 
   return (
-    <>
+    <div className={styles.page}>
       <Popup open={isOpen} closeOnDocumentClick onClose={closeModal}>
         <InitialPrompt />
         <button className="bigButton" onClick={closeModal}>
@@ -150,7 +150,7 @@ const mystyle = {
             </div>
           )}
         </Popup>
-        <Popup trigger={<button class="btn"> Banking </button>} modal nested>
+        <Popup trigger={<button className="btn"> Banking </button>} modal nested>
           {(close) => (
             <div className="modal">
               <div className="content">
@@ -165,8 +165,8 @@ const mystyle = {
 
         {done ? <Summary></Summary> : <div></div>}
       </div>
-      <div className="advancedbtn">
-        <Popup trigger={<button class="advancebtn"> Advance to next stage </button>} modal nested>
+      <div className={styles.advancedbtn}>
+        <Popup trigger={<button className="advancebtn"> Advance to next stage </button>} modal nested>
             {(close) => (
               <div className="modal">
                 <div className="content">
@@ -180,7 +180,7 @@ const mystyle = {
             )}
         </Popup>
       </div>
-    </>
+    </div>
   );
 };
 
