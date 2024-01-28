@@ -17,6 +17,9 @@ import SideQuestsNav from "../components/side_quests_nav.js";
 // import Summary from "../summary_content/summary_page.js";
 import styles from './page.module.css';
 
+import Lottie from "lottie-react";
+import animationData4 from "../assets/animation4.json";
+
 const Page = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [promptCounter, setPromptCounter] = useState(0);
@@ -113,7 +116,8 @@ const mystyle = {
         </button>
       </Popup>
 
-      <div>
+      <div className="container1">
+        <Lottie animationData={animationData4} className={styles.dollar}></Lottie>
         <p>Money: ${bankAccountBalance}</p>
       </div>
       <div>
@@ -138,7 +142,7 @@ const mystyle = {
       </div>
 
       <div>
-        <Popup trigger={<button> Side Quests </button>} modal nested>
+        <Popup trigger={<button className="bigButton"> Side Quests </button>} modal nested>
           {(close) => (
             <div className="modal">
               <div className="content">{""}</div>
@@ -150,7 +154,7 @@ const mystyle = {
             </div>
           )}
         </Popup>
-        <Popup trigger={<button className="btn"> Banking </button>} modal nested>
+        <Popup trigger={<button className="bigButton"> Banking </button>} modal nested>
           {(close) => (
             <div className="modal">
               <div className="content">
@@ -166,7 +170,7 @@ const mystyle = {
         {done ? <Summary></Summary> : <div></div>}
       </div>
       <div className={styles.advancedbtn}>
-        <Popup trigger={<button className="advancebtn"> Advance to next stage </button>} modal nested>
+        <Popup trigger={<button className="bigButton"> Advance to next stage </button>} modal nested>
             {(close) => (
               <div className="modal">
                 <div className="content">
