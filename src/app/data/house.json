@@ -5,24 +5,24 @@
       {
         "decision": "Best Choice",
         "description": "Opt for an affordable starter home within your budget, secure a mortgage with a reasonable interest rate, and also decide to have roommates to share expenses. This allows you to build equity while managing costs effectively.",
-        "liabilities_change": 100000     // Mortgage for an affordable home
+        "liabilities_change": 100000
       },
       {
         "decision": "Good Choice",
         "description": "Decide to purchase your dream home, which is more expensive, and take out a larger mortgage. However, engage in meticulous financial planning to ensure you can manage the higher costs effectively.",
-        "liabilities_change": 300000     // Mortgage for a more expensive dream home
+        "liabilities_change": 300000
       },
       {
         "decision": "Bad Choice - Renting a House",
         "description": "Choose to rent a house instead of buying one. However, invest the money you would have spent on a mortgage into other ventures, which require careful management and carry their own risks.",
-        "liabilities_change": 0,          // No mortgage, but investments with potential risks
-        "bank_balance_change": -12000     // Annual rental expenses
+        "liabilities_change": 0,
+        "bank_balance_change": -12000
       },
       {
         "decision": "Worst Choice - Buying a Fixer-Upper",
         "description": "Purchase a fixer-upper home at a reasonable price and plan to renovate it. While it may be cost-effective in the long run, it requires significant time and effort to manage the renovations.",
-        "liabilities_change": 150000,     // Mortgage for a fixer-upper home
-        "bank_balance_change": -8000      // Annual maintenance and renovation expenses
+        "liabilities_change": 150000,
+        "bank_balance_change": -8000
       }
     ],
     "lesson": {

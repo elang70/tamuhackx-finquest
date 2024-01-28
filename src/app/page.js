@@ -1,11 +1,15 @@
+"use client";
 import Image from "next/image";
 import styles from "./page.module.css";
+import Lottie from "lottie-react";
+import animationData from "./assets/animation.json";
 import Summary from "./summary_content/summary_page";
 
 export default function Home() {
   return (
     <>
-      <h1>Welcome to FinQuest!</h1>
+      <h1 className={styles.h1}>Welcome to FinQuest, your answer to financial freedom</h1>
+      <Lottie animationData={animationData} className={styles.superhero}></Lottie>
       <p>Description: lorem ipsum lorem ipsum lorem ipsum lorem 
         ipsumlorem ipsum lorem ipsum lorem ipsum lorem ipsumlorem ipsum
         lorem ipsum lorem ipsum lorem ipsum lorem 
@@ -21,9 +25,11 @@ export default function Home() {
           <a>Investment</a> 
         </li>
       </ul>
+      <button className={styles.btn}>BUTTON!!!!!!!</button>
 
       <Summary></Summary>
 
     </>
   );
 }
+
